@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/tv_title_1"
+                android:text="报名人数" />
+
+            <com.dmeyc.dmestoreyfm.wedgit.CustomItemView1
+                android:id="@+id/civ1_man_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:civ1_left_str="男"
+                app:civ1_type="2" />
+
+            <com.dmeyc.dmestoreyfm.wedgit.CustomItemView1
+                android:id="@+id/civ1_woman_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:civ1_left_str="女"
+                app:civ1_type="2" />
+
+            <TextView
+                style="@style/tv_title_1"
+                android:text="保险" />
+
+            <!--<com.dmeyc.dmestoreyfm.wedgit.CustomItemView1-->
+                <!--android:id="@+id/civ1_accident"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:civ1_left_str="好兔运动意外险"-->
+                <!--app:civ1_type="2" />-->
+
+            <!--<com.dmeyc.dmestoreyfm.wedgit.CustomItemView1-->
+                <!--android:id="@+id/civ1_main_risk"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:civ1_left_str="好兔群主责任险"-->
+                <!--app:civ1_type="2" />-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_safe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                style="@style/tv_title_1"
+                android:text="支付方式" />
+
+            <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:civ_left_str="微信支付" />
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_pay_title"
+            style="@style/text_17_black"
+            android:paddingLeft="14.5dp"
+            android:paddingTop="22.5dp"
+            android:paddingBottom="22.5dp"
+            android:text="合计："
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_total_pay"
+            style="@style/text_17_black"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/color_FF5F5F"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/tv_pay_title"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text='44元' />
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            style="@style/text_14_9D9D9D"
+            android:layout_marginRight="17.5dp"
+            android:background="@color/color_FFA700"
+            android:paddingLeft="16dp"
+            android:paddingTop="4dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="4dp"
+            android:text="确认支付"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

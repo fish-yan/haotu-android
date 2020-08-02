@@ -1,0 +1,71 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:text="速度恢复快速的回复可见当时"
+        />
+<!--<android.support.design.widget.CoordinatorLayout -->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:fitsSystemWindows="false"-->
+        <!--&gt;-->
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:id="@+id/appbar"-->
+        <!--android:background="@color/white"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:fitsSystemWindows="false"-->
+        <!--&gt;-->
+        <!--&lt;!&ndash;<android.support.design.widget.CollapsingToolbarLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:contentScrim="#ffffff"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="#ffffff"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:expandedTitleMarginStart="120dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:layout_scrollFlags="scroll"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:statusBarScrim="@android:color/transparent"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:titleEnabled="false">&ndash;&gt;-->
+        <!--&lt;!&ndash;</android.support.design.widget.CollapsingToolbarLayout>&ndash;&gt;-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<android.support.design.widget.TabLayout-->
+                <!--android:id="@+id/tabs"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1">-->
+            <!--</android.support.design.widget.TabLayout>-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/add_channel_iv"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:foreground="?android:attr/selectableItemBackground"-->
+                <!--android:maxHeight="?attr/actionBarSize"-->
+                <!--android:padding="@dimen/item_margin"-->
+                <!--android:src="@drawable/ic_add"-->
+                <!--android:contentDescription=""-->
+               <!--/>-->
+        <!--</LinearLayout>-->
+
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/view_pager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+    <!--</android.support.v4.view.ViewPager>-->
+<!--</android.support.design.widget.CoordinatorLayout>-->
+</LinearLayout>

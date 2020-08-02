@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        style="@style/text_14_9D9D9D"
+        android:layout_margin="15dp"
+        tools:text="我的名字" />
+
+    <EditText
+        android:id="@+id/et_content"
+        style="@style/editText_instruction" />
+</LinearLayout>

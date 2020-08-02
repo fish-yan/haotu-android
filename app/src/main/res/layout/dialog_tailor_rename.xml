@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/bg_dialog"
+        android:layout_width="315dp"
+        android:layout_height="205dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:gravity="center"
+            android:text="输入量身记录名称"
+            android:textColor="@color/color_1a1a1a"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/ed_save"
+            android:layout_margin="@dimen/dimen_25"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@drawable/shape_tailor_ed"
+            android:hint="输入量身记录名称"
+            android:textColorHint="@color/color_c5c5c5"
+            android:textSize="15sp"
+            android:paddingLeft="10dp"
+            />
+        <LinearLayout
+            android:layout_marginRight="@dimen/dimen_25"
+            android:layout_marginLeft="@dimen/dimen_25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text_cancel"
+                android:layout_width="119dp"
+                android:layout_height="39dp"
+                android:background="@drawable/shape_tailor_cance"
+                android:text="取消"
+                android:textColor="@color/color_c5c5c5"
+                android:gravity="center"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/text_sure"
+                android:layout_width="119dp"
+                android:layout_height="39dp"
+                android:background="@drawable/shape_tailor_sure"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

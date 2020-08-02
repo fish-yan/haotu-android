@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+
+        android:id="@+id/tv_titl"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="品牌介绍"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:textColor="@color/color_text_02"
+        />
+    <TextView
+        android:textColor="@color/gray"
+        android:textSize="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_picktext"
+        />
+    <!--<com.dmeyc.dmestore.wedgit.PickTextView-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:id="@+id/tv_picktext"-->
+        <!--/>-->
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/iv_roundmage"
+        android:layout_width="234dp"
+        android:layout_height="134dp"
+        app:riv_corner_radius="20px"
+        />
+
+    <View
+       android:background="@drawable/divide"
+        android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        />
+    <!--<>-->
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recycleview1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="20.5dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_shops_name"
+        style="@style/text_15_black"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="5.5dp"
+        app:layout_constraintLeft_toRightOf="@id/iv_icon"
+        app:layout_constraintTop_toTopOf="@id/iv_icon"
+        tools:text="某某酒家" />
+
+    <TextView
+        android:id="@+id/tv_shops_addr"
+        style="@style/text_14_9D9D9D"
+        android:layout_marginLeft="9dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_icon"
+        app:layout_constraintLeft_toRightOf="@id/iv_icon"
+        tools:text="地址：xxxx路" />
+
+</android.support.constraint.ConstraintLayout>

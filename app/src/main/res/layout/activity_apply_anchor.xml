@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+        android:id="@+id/civ_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:civ_left_hint_str="请填您的真实姓名"
+        app:civ_type="2" />
+
+    <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+        android:id="@+id/civ_id_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:civ_left_hint_str="请填写您的身份证号"
+        app:civ_type="2" />
+
+    <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+        android:id="@+id/civ_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:civ_left_hint_str="请填写联系号码"
+        app:civ_type="2" />
+
+    <ImageView
+        android:id="@+id/iv_idcard_front"
+        android:layout_width="254.5dp"
+        android:layout_height="143.5dp"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/bg_idcard_front" />
+
+    <ImageView
+        android:id="@+id/iv_idcard_back"
+        android:layout_width="254.5dp"
+        android:layout_height="143.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_idcard_back" />
+</LinearLayout>

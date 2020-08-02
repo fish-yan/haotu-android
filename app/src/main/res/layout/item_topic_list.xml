@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mParentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:background="@color/white"
+    >
+    <TextView
+        android:id="@+id/tv_topic_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="话题"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="#969696"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0.5"
+        android:background="#e8e8e8"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

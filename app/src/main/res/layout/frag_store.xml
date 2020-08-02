@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<com.dmeyc.dmestore.wedgit.pulltozoomview.PullToZoomListViewEx-->
+        <!--android:id="@+id/listview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scrollbars="none"-->
+        <!--custom:zoomView="@layout/home_head_zoom_view"-->
+        <!--android:divider="@null"/>-->
+
+    <!--<TextView-->
+    <!--android:textSize="20dp"-->
+    <!--android:text="dsfsdfsdfsd"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--/>-->
+    <!--custom:headerView="@layout/profile_head_view"-->
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/gv_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+
+    <!--<RelativeLayout-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_width="match_parent"-->
+    <!--&gt;-->
+   <!---->
+
+    <!--<LinearLayout-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:id="@+id/ll_spec"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--&gt;-->
+        <!--<TextView-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/gray"-->
+            <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="品牌专栏"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="14dp"-->
+        <!--android:textColor="@color/color_text_02"-->
+        <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="dsfsdafafasdfdasfasdfasdfadsffd"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textSize="14dp"-->
+            <!--android:textColor="@color/color_text_02"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+<!--</RelativeLayout>>-->
+</LinearLayout>

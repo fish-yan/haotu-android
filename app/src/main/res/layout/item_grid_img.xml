@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<com.dmeyc.dmestoreyfm.adapter.photo.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="300dp"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:background="@null">-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dimen_10"
+        android:id="@+id/rl_pic"
+        android:layout_width="@dimen/dimen_80"
+        android:layout_height="@dimen/dimen_80"
+        android:layout_centerInParent="true"
+        >
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/row_gridview_imageview"
+        android:layout_width="@dimen/dimen_80"
+        android:layout_height="@dimen/dimen_80"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="0dp"
+        android:layout_centerInParent="true"/>
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_delete"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/dimen_20"
+        android:layout_height="@dimen/dimen_20"
+        android:background="@drawable/share_delet"
+        />
+    </RelativeLayout>
+<LinearLayout
+    android:visibility="gone"
+    android:background="@drawable/shap_linegray"
+    android:layout_marginTop="@dimen/dimen_10"
+    android:layout_marginBottom="@dimen/dimen_10"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/rl_pic"
+    android:layout_width="@dimen/dimen_160"
+    android:layout_height="@dimen/dimen_40"
+      android:orientation="vertical"
+    >
+    <EditText
+        android:id="@+id/et_desc"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:hint="请输入描述文字"
+        android:layout_width="@dimen/dimen_160"
+        android:layout_height="@dimen/dimen_40"
+        android:background="@null"
+        />
+</LinearLayout>
+</LinearLayout>
+<!--</com.dmeyc.dmestoreyfm.adapter.photo.SquareLayout>-->

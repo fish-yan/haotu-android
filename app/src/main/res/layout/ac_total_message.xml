@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/divide_block_color"
+    tools:context="com.dmeyc.dmestoreyfm.ui.TotalMessageActivity">
+
+    <include layout="@layout/base_title_bar" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <View style="@style/head_shadow" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rel_system"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:src="@drawable/news_ic_inform"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="系统消息"
+                        android:textColor="@color/color_1a1a1a"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="11:00"
+                        android:textSize="12sp"
+                        android:gravity="right"
+                        android:textColor="@color/gray"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/gray"
+                    android:text="您的订单已经发货"
+                    android:layout_marginLeft="33dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"/>
+            </RelativeLayout>
+
+            <View style="@style/divide_line"
+                android:layout_marginLeft="53dp"
+                android:layout_marginRight="20dp"/>
+
+            <RelativeLayout
+                android:id="@+id/rel_record"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/news_ic_service"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="商家客服"
+                        android:textColor="@color/color_1a1a1a"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="12:00"
+                        android:textSize="12sp"
+                        android:gravity="right"
+                        android:textColor="@color/gray"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="19dp"
+                    android:text="您有一条新的消息"
+                    android:layout_marginLeft="@dimen/dimen_50"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

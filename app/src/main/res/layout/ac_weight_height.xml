@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.dmeyc.dmestoreyfm.ui.WeightHeightActivity">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <View style="@style/head_shadow"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="身高 (CM)"
+                    android:textColor="@color/color_1a1a1a" />
+                <TextView
+                    android:id="@+id/tv_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_1a1a1a"
+                    android:textSize="20sp"
+                    android:text="165.0"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="24dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                    <com.zkk.view.rulerview.RulerView
+                        android:id="@+id/ruler_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="76.5dp"
+                        android:layout_marginTop="12.5dip"
+                        app:alphaEnable="true"
+                        app:lineColor="@color/color_1a1a1a"
+                        app:lineMaxHeight="40dp"
+                        app:lineMidHeight="25dp"
+                        app:lineMinHeight="20dp"
+                        app:lineSpaceWidth="10dp"
+                        app:lineWidth="1dip"
+                        app:textColor="@color/color_1a1a1a"
+                        app:textSize="12sp"
+                        app:textMarginTop="12dp"/>
+                    <ImageView
+                        android:layout_width="10.5dp"
+                        android:layout_height="52.5dp"
+                        android:src="@drawable/measure_ic_arrow_orange"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_1a1a1a"
+                    android:text="体重 (KG)"
+                    android:layout_gravity="center_horizontal" />
+                <TextView
+                    android:id="@+id/tv_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="23.5dp"
+                    android:text="55"
+                    android:textColor="@color/color_1a1a1a"
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                    <com.zkk.view.rulerview.RulerView
+                        android:id="@+id/ruler_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="76.5dp"
+                        android:layout_marginTop="12.5dip"
+                        app:alphaEnable="true"
+                        app:lineColor="@color/color_1a1a1a"
+                        app:lineMaxHeight="40dp"
+                        app:lineMidHeight="25dp"
+                        app:lineMinHeight="20dp"
+                        app:lineSpaceWidth="10dp"
+                        app:lineWidth="1dip"
+                        app:textColor="@color/color_1a1a1a"
+                        app:textSize="12sp"
+                        app:textMarginTop="12dp"/>
+                    <ImageView
+                        android:layout_width="10.5dp"
+                        android:layout_height="52.5dp"
+                        android:src="@drawable/measure_ic_arrow_orange"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_submit"
+        style="@style/common_submit"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="完成量身" />
+</LinearLayout>

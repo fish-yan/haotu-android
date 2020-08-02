@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="BadgeView">
+        <attr name="iconSrc" format="reference"/>
+        <attr name="iconWidth" format="dimension"/>
+        <attr name="iconHeight" format="dimension"/>
+        <!--若是icon是正方形的,可直接设置这个参数-->
+        <attr name="iconSize" format="dimension"/>
+
+        <attr name="text" format="string"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+
+        <attr name="badgeNum" format="integer"/>
+        <!--是否显示数字, 为false时只显示小红点; 没有数字时,小红点的大小通过badgeSize设置-->
+        <attr name="showNum" format="boolean"/>
+        <attr name="badgeBackgroundColor" format="color"/>
+        <!--限制设置小红点的大小不能超过数字显示模式(代码中也做了限制); 显示在文字模式大小的左下角;-->
+        <!-- 不显示数字时, 小红点的大小, 不包括边线-->
+        <attr name="badgeRedSize" format="dimension"/>
+        <attr name="badgeNumSize" format="dimension"/>
+        <attr name="badgeNumColor" format="color"/>
+        <!--若小红点有边缘线,加上边缘线-->
+        <attr name="badgeBorderColor" format="color"/>
+        <attr name="badgeBorderWidth" format="dimension"/>
+        <!--badge相对于主体右上角的相对位置, 重叠的部分的大小; 可以设置负值-->
+        <!--默认是( badgeHeight/2 ), 正好覆盖一个角-->
+        <attr name="badgeBottom" format="dimension"/>
+        <attr name="badgeLeft" format="dimension"/>
+        <!-- 有些设计要求未读前面加"+", (至少我们设计师这么设计) 显示成 +1/+34/+99-->
+        <attr name="badgeNumPre" format="string"/>
+    </declare-styleable>
+
+    <string-array name="photoSelectList">
+        <item>拍照上传</item>
+        <item>相册选择</item>
+        <item>视频</item>
+        <item>拍摄短视频</item>
+        <item>取\u0020\u0020\u0020\u0020消</item>
+        <item>语音</item>
+    </string-array>
+
+    <declare-styleable name="AutoFlowLayout">
+        <attr name="singleLine" format="boolean"></attr>
+        <attr name="maxLines" format="integer"></attr>
+        <attr name="multiChecked" format="boolean"></attr>
+        <attr name="horizontalSpace" format="dimension"></attr>
+        <attr name="verticalSpace" format="dimension"></attr>
+        <attr name="columnNumbers" format="integer"></attr>
+        <attr name="rowNumbers" format="integer"></attr>
+        <attr name="cutLineWidth" format="dimension"></attr>
+        <attr name="cutLineColor" format="color"></attr>
+        <attr name="cutLine" format="boolean"></attr>
+        <attr name="lineCenter" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="MyImageViewRatio">
+        <attr name="ratio" format="float"/>
+        <attr name="angle" format="integer"/>
+        <attr name="isCircle" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="RatingBar">
+        <!--未选中-->
+        <attr name="starEmptyRes" format="reference" />
+        <!--选中半个-->
+        <attr name="starHalfRes" format="reference" />
+        <!--选中全部-->
+        <attr name="starSelectedRes" format="reference" />
+        <!--星星的总数-->
+        <attr name="startTotalNumber" format="integer" />
+        <!--默认选中的数量 -->
+        <attr name="selectedNumber" format="float" />
+        <!--星星的间距-->
+        <attr name="starDistance" format="dimension" />
+        <!--星星的宽度-->
+        <attr name="starWidth" format="dimension" />
+        <!--星星的高度-->
+        <attr name="starHeight" format="dimension" />
+        <!--是不是只画整个星星，不画半个-->
+        <attr name="starIsFull" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="XlHRatingBar">
+        <attr name="starCount" format="integer" /><!--总的星星数-->
+        <attr name="canEdit" format="boolean" /><!--是否可以点击选择，有时候纯展示用不需要选择-->
+        <attr name="widthAndHeight" format="dimension" /><!--单个星星的宽度-->
+        <attr name="dividerWidth" format="dimension" /><!--星星左右间距-->
+        <attr name="countSelected" format="integer" /><!--当前已选中的星星个数-->
+        <attr name="stateResId" format="reference" /><!--单个星星不同状态下对应的图标-->
+        <attr name="differentSize" format="boolean" /><!--是否支持大小不等星星样式-->
+    </declare-styleable>
+
+    <declare-styleable name="MarqueeViewStyle">
+        <attr name="mvInterval" format="integer|reference"/>
+        <attr name="mvAnimDuration" format="integer|reference"/>
+        <attr name="mvTextSize" format="dimension|reference"/>
+        <attr name="mvTextColor" format="color|reference"/>
+        <attr name="mvSingleLine" format="boolean"/>
+        <attr name="mvGravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <attr name="mvDirection">
+            <enum name="bottom_to_top" value="0"/>
+            <enum name="top_to_bottom" value="1"/>
+            <enum name="right_to_left" value="2"/>
+            <enum name="left_to_right" value="3"/>
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="LazyViewPager">
+        <attr name="init_lazy_item_offset" format="float" />
+    </declare-styleable>
+
+
+    <declare-styleable name="AmountView">
+        <!-- 左右2边+-按钮的宽度 -->
+        <attr name="btnWidth" format="dimension" />
+        <!-- 中间TextView的宽度 -->
+        <attr name="tvWidth" format="dimension" />
+        <!--<attr name="tvColor" format="color"/>-->
+        <attr name="tvTextSize" format="dimension"/>
+        <attr name="btnTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="FocusImageView">
+        <attr name="focus_focusing_id" format="integer" />
+        <attr name="focus_success_id" format="integer" />
+        <attr name="focus_fail_id" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="AutofitTextView">
+        <!-- Minimum size of the text. -->
+        <attr name="minTextSize" format="dimension" />
+        <!-- Amount of precision used to calculate the correct text size to fit within its
+        bounds. Lower precision is more precise and takes more time. -->
+        <attr name="precision" format="float" />
+        <!-- Defines whether to automatically resize text to fit to the view's bounds. -->
+        <attr name="sizeToFit" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PullToZoomView">
+        <attr name="headerView" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="zoomView" format="reference" />
+        <attr name="isHeaderParallax" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="numberTextView">
+        <attr name="numberName" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="CardView">
+        <attr name="cardBackgroundColor" format="color" />
+        <attr name="cardCornerRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="WaveSideBar">
+        <attr name="sidebar_lazy_respond" format="boolean"/>
+        <attr name="sidebar_text_size" format="dimension"/>
+        <attr name="sidebar_text_color" format="color"/>
+        <attr name="sidebar_max_offset" format="dimension"/>
+        <attr name="sidebar_position" format="enum">
+            <enum name="right" value="0"/>
+            <enum name="left" value="1"/>
+        </attr>
+        <attr name="sidebar_text_alignment" format="enum">
+            <enum name="center" value="0"/>
+            <enum name="left" value="1"/>
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="vericationCodeInput">
+        <attr name="box" format="integer" />
+        <attr name="child_h_padding" format="dimension"/>
+        <attr name="child_v_padding" format="dimension"/>
+        <attr name="child_width" format="dimension"/>
+        <attr name="child_height" format="dimension"/>
+        <attr name="padding" format="dimension"/>
+        <attr name="box_bg_focus" format="reference"/>
+        <attr name="box_bg_normal" format="reference"/>
+        <attr name="inputType" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="NodeProgressView">
+        <attr name="width" format="dimension"/>
+        <attr name="nodeRadius" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="priceview">
+        <attr name="sign_textsize" format="dimension|reference"/>
+        <attr name="sign_color" format="color|reference"/>
+        <attr name="price_textsize" format="dimension|reference"/>
+        <attr name="price_color" format="color|reference"/>
+        <attr name="space" format="dimension"/>
+        <attr name="isShow" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="AVLoadingIndicatorView">
+        <attr name="minWidth" format="dimension" />
+        <attr name="maxWidth" format="dimension"/>
+        <attr name="minHeight" format="dimension" />
+        <attr name="maxHeight" format="dimension"/>
+        <attr name="indicatorColor" format="color"/>
+        <attr name="AVLoadingIndicatorView_indicator" format="integer"/>
+        <attr name="indicator" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="RoundAngleImageView">
+        <attr name="roundWidth" format="dimension" />
+        <attr name="roundHeight" format="dimension" />
+    </declare-styleable>
+
+    <!--每行字段数-->
+    <attr name="wkp_column" format="integer"/>
+    <!--最少显示行数-->
+    <attr name="wkp_rowMin" format="integer"/>
+    <!--条目间距-->
+    <attr name="wkp_space" format="dimension"/>
+    <!--条目动画时长,0为无动画-->
+    <attr name="wkp_itemDuration" format="integer"/>
+    <!--条目高度-->
+    <attr name="wkp_itemHeight" format="dimension"/>
+    <!--“更多”按钮图片-->
+    <attr name="wkp_moreButtonImg" format="reference"/>
+    <!--“更多”按钮文本-->
+    <attr name="wkp_moreButtonText" format="string"/>
+    <!--显示文本模式时的条目背景色-->
+    <attr name="wkp_textBgColor" format="color"/>
+    <!--显示文本模式时的条目文本颜色-->
+    <attr name="wkp_textColor" format="color"/>
+    <!--显示文本模式时的文本大小-->
+    <attr name="wkp_textSize" format="dimension"/>
+    <!--显示文本模式时的条目背景图-->
+    <attr name="wkp_textBgRes" format="reference"/>
+
+
+
+
+    <!-- Don't touch this -->
+    <attr name="numberPickerStyle" format="reference" />
+
+    <declare-styleable name="NumberPicker">
+        <!-- @hide Color for the solid color background if such for optimized rendering. -->
+        <attr name="solidColor" format="color|reference" />
+        <!-- @hide The divider for making the selection area. -->
+        <attr name="selectionDivider" format="reference" />
+        <!-- @hide The height of the selection divider. -->
+        <attr name="selectionDividerHeight" format="dimension" />
+        <!-- @hide The distance between the two selection dividers. -->
+        <attr name="selectionDividersDistance" format="dimension" />
+        <!-- @hide The min height of the NumberPicker. -->
+        <attr name="internalMinHeight" format="dimension" />
+        <!-- @hide The max height of the NumberPicker. -->
+        <attr name="internalMaxHeight" format="dimension" />
+        <!-- @hide The min width of the NumberPicker. -->
+        <attr name="internalMinWidth" format="dimension" />
+        <!-- @hide The max width of the NumberPicker. -->
+        <attr name="internalMaxWidth" format="dimension" />
+        <!-- @hide The layout of the number picker. -->
+        <attr name="internalLayout" format="reference" />
+        <!-- @hide The drawable for pressed virtual (increment/decrement) buttons. -->
+        <attr name="virtualButtonPressedDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomItemView">
+        <attr name="civ_left_str" format="string"/>
+        <attr name="civ_left_hint_str" format="string"/>
+        <attr name="civ_right_str" format="string"/>
+        <attr name="civ_right_hint_str" format="string"/>
+        <attr name="civ_type" format="integer"/>
+        <attr name="civ_input_type" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="CustomItemView1">
+        <attr name="civ1_left_str" format="string"/>
+        <attr name="civ1_tip_str" format="string"/>
+        <attr name="civ1_type" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="ViewUploadPicture">
+        <attr name="vup_tips" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="HeaderIconView">
+        <attr name="hiv_type" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="MaxHeightRecyclerView">
+        <attr name="mrv_maxHeight" format="dimension" />
+    </declare-styleable>
+</resources>

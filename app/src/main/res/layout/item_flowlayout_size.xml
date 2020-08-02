@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/item_tv_flowlayout"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="@color/gray"
+        android:singleLine="true"
+        android:maxLength="16"
+        android:text="M"
+        android:background="@drawable/shape_1radius_99_stroke"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"/>
+</FrameLayout>

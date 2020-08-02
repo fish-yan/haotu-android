@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <com.tencent.liteav.demo.play.SuperPlayerView
+        android:id="@+id/mViewPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:id="@+id/view_spv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/iv_video_pause"
+        android:layout_width="55dp"
+        android:layout_height="75dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:src="@drawable/ic_ht_video_play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_images"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black" />
+
+    <ImageView
+        android:id="@+id/iv_share"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginRight="30.5dp"
+        android:layout_marginBottom="91dp"
+        android:src="@drawable/icon_transform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_share_count"
+        style="@style/text_14_9D9D9D"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/iv_share"
+        app:layout_constraintRight_toRightOf="@id/iv_share"
+        app:layout_constraintTop_toBottomOf="@id/iv_share"
+        tools:text="3.0W" />
+
+    <TextView
+        android:id="@+id/tv_comment_count"
+        style="@style/text_14_9D9D9D"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/iv_share"
+        app:layout_constraintLeft_toLeftOf="@id/iv_share"
+        app:layout_constraintRight_toRightOf="@id/iv_share"
+        tools:text="2.0W" />
+
+
+    <ImageView
+        android:id="@+id/iv_comment"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:src="@drawable/icon_commont1"
+        app:layout_constraintBottom_toTopOf="@id/tv_comment_count"
+        app:layout_constraintLeft_toLeftOf="@id/iv_share"
+        app:layout_constraintRight_toRightOf="@id/iv_share" />
+
+    <TextView
+        android:id="@+id/tv_like_count"
+        style="@style/text_14_9D9D9D"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/iv_comment"
+        app:layout_constraintLeft_toLeftOf="@id/iv_share"
+        app:layout_constraintRight_toRightOf="@id/iv_share"
+        tools:text="2.0W" />
+
+
+    <ImageView
+        android:id="@+id/iv_like"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:src="@drawable/icon_like_normal"
+        app:layout_constraintBottom_toTopOf="@id/tv_like_count"
+        app:layout_constraintLeft_toLeftOf="@id/iv_share"
+        app:layout_constraintRight_toRightOf="@id/iv_share" />
+
+    <com.dmeyc.dmestoreyfm.wedgit.CircleImageView
+        android:id="@+id/civ_header"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toTopOf="@id/iv_like"
+        app:layout_constraintLeft_toLeftOf="@id/iv_share"
+        app:layout_constraintRight_toRightOf="@id/iv_share" />
+
+    <ImageView
+        android:id="@+id/iv_living_flag"
+        android:layout_width="40dp"
+        android:layout_height="13dp"
+        android:layout_marginBottom="7dp"
+        android:src="@drawable/icon_living_flag"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/civ_header"
+        app:layout_constraintLeft_toLeftOf="@id/civ_header"
+        app:layout_constraintRight_toRightOf="@id/civ_header"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_share"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:text="激烈的比赛正在进行中" />
+
+    <TextView
+        android:id="@+id/tv_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="200dp"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@id/tv_content"
+        app:layout_constraintLeft_toLeftOf="@id/tv_content"
+        tools:text="FBM的创作" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_advice"
+        android:layout_width="273dp"
+        android:layout_height="87.5dp"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/shape_home_ad_item_bg"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_ad_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="8.5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_ad_name"
+            style="@style/text_15_black"
+            android:layout_marginLeft="8.5dp"
+            android:layout_marginTop="11.5dp"
+            android:textSize="13sp"
+            app:layout_constraintLeft_toRightOf="@id/iv_ad_icon"
+            app:layout_constraintTop_toTopOf="@id/iv_ad_icon"
+            tools:text="CMC羽毛球俱乐部" />
+
+        <TextView
+            android:id="@+id/tv_ad_instruction"
+            style="@style/text_wrap_content"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/color_9A6500"
+            android:textSize="9sp"
+            app:layout_constraintLeft_toLeftOf="@id/tv_ad_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_ad_name"
+            tools:text="最新活动信息点击查看" />
+
+        <ImageView
+            android:id="@+id/iv_ad_close"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/icon_close"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

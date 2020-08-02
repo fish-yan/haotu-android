@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:text="{'id':'435'}"
+            android:id="@+id/et_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="test" />
+    </RelativeLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/iv_fans"
+            android:layout_width="44dp"
+            android:layout_height="68dp"
+            android:background="@drawable/icon_fans"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/iv_prise"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_fans_tip"
+            style="@style/text_red_point"
+            android:visibility="visible"
+            android:text="12"
+            app:layout_constraintRight_toRightOf="@id/iv_fans"
+            app:layout_constraintTop_toTopOf="@id/iv_fans" />
+
+
+        <ImageView
+            android:id="@+id/iv_prise"
+            android:layout_width="44dp"
+            android:layout_height="68dp"
+            android:background="@drawable/icon_prise"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/iv_fans"
+            app:layout_constraintRight_toLeftOf="@+id/iv_at_me"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/iv_prise_tip"
+            style="@style/text_red_point"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="@id/iv_prise"
+            app:layout_constraintTop_toTopOf="@id/iv_fans" />
+
+        <ImageView
+            android:id="@+id/iv_at_me"
+            android:layout_width="44dp"
+            android:layout_height="68dp"
+            android:background="@drawable/icon_at_to_me"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/iv_prise"
+            app:layout_constraintRight_toLeftOf="@id/iv_comment"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_at_me_tip"
+            style="@style/text_red_point"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="@id/iv_at_me"
+            app:layout_constraintTop_toTopOf="@id/iv_fans" />
+
+        <ImageView
+            android:id="@+id/iv_comment"
+            android:layout_width="44dp"
+            android:layout_height="68dp"
+            android:background="@drawable/icon_comment"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/iv_at_me"
+
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_comment_tip"
+            style="@style/text_red_point"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="@id/iv_comment"
+            app:layout_constraintTop_toTopOf="@id/iv_fans" />
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/subconversationlist"
+        android:name="io.rong.imkit.fragment.ConversationListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+</LinearLayout>

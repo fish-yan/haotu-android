@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.dmeyc.dmestoreyfm.ui.BindMobileActivity">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <TextView
+        android:text="绑定手机号"
+        style="@style/tv_common_title" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <EditText
+            android:id="@+id/et_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@null"
+            android:textSize="14sp"
+            android:textColor="@color/color_1a1a1a"
+            android:textColorHint="@color/gray"
+            android:hint="请输入手机号码"
+            android:inputType="number"
+            android:maxLength="11"
+            android:gravity="center_vertical"/>
+        <View style="@style/divide_line"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@null"
+                android:textSize="14sp"
+                android:textColor="@color/color_1a1a1a"
+                android:textColorHint="@color/gray"
+                android:hint="验证码"
+                android:inputType="number"
+                android:maxLength="6"
+                android:gravity="center_vertical"
+                android:layout_marginRight="80dp"/>
+            <com.dmeyc.dmestoreyfm.wedgit.TimerTaskTextView
+                android:id="@+id/timertasktextview"
+                android:layout_width="78dp"
+                android:layout_height="30dp"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:background="@drawable/shape_input_code_focus"
+                android:textColor="@color/color_1a1a1a"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <View style="@style/divide_line"/>
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="@color/white"
+            android:clickable="false"
+            android:background="@drawable/shape_1radius_c5"
+            android:layout_marginTop="62.5dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    android:id="@+id/smartRl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:srlPrimaryColor="#afff"
+    app:srlAccentColor="@color/color_1a1a1a"
+    app:srlEnableLoadmore="true"
+    app:srlEnableHeaderTranslationContent="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.scwang.smartrefresh.header.StoreHouseHeader
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:shhText="dmeycstore"
+        app:shhLineWidth="2dp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"/>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

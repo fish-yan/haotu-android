@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/page"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <include layout="@layout/include_top_title_layout"
+        android:id="@+id/top_layout_album"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_bottonmbar_father"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/bottomBar"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="#fff">
+
+            <Button
+                android:id="@+id/finishBtn"
+                style="@style/blue_btn"
+                android:layout_width="80dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:onClick="onFinishSelectClick"
+                android:text="完成(0/0)"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+            <HorizontalScrollView
+                android:id="@+id/hsv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/finishBtn"
+                android:overScrollMode="always"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/selectLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:background="@color/transparent"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal">-->
+        <!--android:textColor="@color/color_star_women_red"-->
+            <RadioButton
+                android:id="@+id/rb_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="原图"
+                android:textColor="@color/color_star_women_red"
+                android:layout_marginLeft="5dp" />
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+    <com.dmeyc.dmestoreyfm.utils.photoselector.KendalGridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout_album"
+        android:layout_above="@+id/ll_bottonmbar_father"
+        android:cacheColorHint="#00000000"
+        android:columnWidth="80dp"
+        android:fadingEdge="none"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:listSelector="#00000000"
+        android:numColumns="4"
+        android:padding="5dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp" />
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.dmeyc.dmestoreyfm.ui.BackLogisticsActivity">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <TextView style="@style/tv_common_title"
+        android:text="退货物流"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View style="@style/divide_line"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_1a1a1a"
+                    android:text="物流公司"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:id="@+id/tv_logistics_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/ic_back_gray"
+                    android:layout_centerVertical="true"
+                    android:hint="请填写"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/color_1a1a1a"
+                    android:gravity="center_vertical|right"/>
+            </RelativeLayout>
+            <View style="@style/divide_line"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_1a1a1a"
+                    android:text="物流单号"
+                    android:layout_centerVertical="true"/>
+                <EditText
+                    android:id="@+id/et_logistics_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:hint="请填写"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/color_1a1a1a"
+                    android:background="@null"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical|right"/>
+            </RelativeLayout>
+            <View style="@style/divide_line"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:text="确认"
+            android:layout_marginBottom="30dp"
+            style="@style/common_submit" />
+    </RelativeLayout>
+</LinearLayout>

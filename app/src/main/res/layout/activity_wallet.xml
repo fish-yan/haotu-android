@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/tv_balance_title"
+            style="@style/text_14_9D9D9D"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="17dp"
+            android:text="余额"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            style="@style/text_16_black"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="27.5dp"
+            android:text="0"
+            android:textSize="31.5sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/tv_balance_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_balance_title" />
+
+        <TextView
+            style="@style/text_16_black"
+            android:text="元"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_balance"
+            app:layout_constraintLeft_toRightOf="@id/tv_balance" />
+
+        <TextView
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:id="@+id/tv_withdraw"
+            style="@style/button_wrap_yellow"
+            android:layout_marginRight="16dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="提现"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+        android:id="@+id/civ_bill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        app:civ_left_str="我的账单" />
+
+    <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+        android:id="@+id/civ_bank_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:civ_left_str="我的银行卡" />
+</LinearLayout>

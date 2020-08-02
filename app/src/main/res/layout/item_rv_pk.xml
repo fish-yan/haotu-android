@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gb"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/status_view"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/go_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/gray_back"
+            />
+
+        <TextView
+            android:id="@+id/tv_left_title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="群PK"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_17" />
+
+        <TextView
+            android:id="@+id/tv_right_title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/indicator_selected_color"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:text="明细"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_right_title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp" />
+
+        <View
+            android:id="@+id/v_divide"
+            style="@style/divide_line"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:fitsSystemWindows="false">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                app:contentScrim="#ffffff"
+                app:expandedTitleMarginStart="120dp"
+                app:layout_scrollFlags="scroll"
+                app:statusBarScrim="@android:color/transparent"
+                app:titleEnabled="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+                    <com.youth.banner.Banner
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="@dimen/dimen_140" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="105dp"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:background="@color/gb"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ll_pking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dimen_10"
+                            android:layout_weight="1"
+                            android:background="@drawable/shap_white_littleconner"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical"
+                                android:text="PK中"
+                                android:textColor="@color/black" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/gb" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/dimen_10"
+                                    android:layout_marginRight="@dimen/dimen_5"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <com.dmeyc.dmestoreyfm.wedgit.CircleImageView
+                                        android:id="@+id/cv_pkone"
+                                        android:layout_width="43dp"
+                                        android:layout_height="43dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/me_ic_head" />
+
+                                    <TextView
+                                        android:id="@+id/pk_onename"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="@dimen/dimen_5"
+                                        android:ellipsize="end"
+                                        android:maxLength="4"
+                                        android:singleLine="true"
+                                        android:text=""
+                                        android:textSize="@dimen/dimen_10" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="@dimen/dimen_16"
+                                    android:layout_height="@dimen/dimen_16"
+                                    android:layout_gravity="center_vertical"
+                                    android:background="@drawable/pk_filre" />
+
+                                <LinearLayout
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/dimen_10"
+                                    android:layout_marginRight="@dimen/dimen_5"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <com.dmeyc.dmestoreyfm.wedgit.CircleImageView
+                                        android:id="@+id/cv_two"
+                                        android:layout_width="43dp"
+                                        android:layout_height="43dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/me_ic_head" />
+
+                                    <TextView
+                                        android:id="@+id/pk_twoname"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="@dimen/dimen_5"
+                                        android:ellipsize="end"
+                                        android:maxLength="4"
+                                        android:singleLine="true"
+                                        android:text=""
+                                        android:textSize="@dimen/dimen_10" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_hero"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dimen_10"
+                            android:layout_marginRight="@dimen/dimen_10"
+                            android:layout_weight="1"
+                            android:background="@drawable/shap_white_littleconner"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dimen_10"
+                                android:gravity="center_vertical"
+                                android:text="英雄榜"
+                                android:textColor="@color/black" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/gb" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/dimen_10"
+                                    android:layout_marginRight="@dimen/dimen_5"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <com.dmeyc.dmestoreyfm.wedgit.CircleImageView
+                                        android:id="@+id/cv_herone"
+                                        android:layout_width="34dp"
+                                        android:layout_height="34dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/me_ic_head" />
+
+                                    <ImageView
+                                        android:layout_width="@dimen/dimen_7"
+                                        android:layout_height="@dimen/dimen_12"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="@dimen/dimen_1"
+                                        android:background="@drawable/number_one" />
+
+                                    <TextView
+                                        android:id="@+id/tv_heroone"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="@dimen/dimen_5"
+                                        android:ellipsize="end"
+                                        android:maxLength="3"
+                                        android:singleLine="true"
+                                        android:text=""
+                                        android:textSize="@dimen/dimen_10" />
+                                </LinearLayout>
+
+                                <LinearLayout
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/dimen_12"
+                                    android:layout_marginRight="@dimen/dimen_5"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <com.dmeyc.dmestoreyfm.wedgit.CircleImageView
+                                        android:id="@+id/cv_hertwo"
+                                        android:layout_width="34dp"
+                                        android:layout_height="34dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/me_ic_head" />
+
+                                    <ImageView
+                                        android:layout_width="@dimen/dimen_7"
+                                        android:layout_height="@dimen/dimen_12"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="@dimen/dimen_1"
+                                        android:background="@drawable/number_two" />
+
+                                    <TextView
+                                        android:id="@+id/tv_herotwo"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="@dimen/dimen_5"
+                                        android:ellipsize="end"
+                                        android:maxLength="3"
+                                        android:singleLine="true"
+                                        android:text=""
+                                        android:textSize="@dimen/dimen_10" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/dimen_10"
+                                    android:layout_marginRight="@dimen/dimen_5"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <com.dmeyc.dmestoreyfm.wedgit.CircleImageView
+                                        android:id="@+id/cv_herthree"
+                                        android:layout_width="34dp"
+                                        android:layout_height="34dp"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/me_ic_head" />
+
+                                    <ImageView
+                                        android:layout_width="@dimen/dimen_7"
+                                        android:layout_height="@dimen/dimen_12"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="@dimen/dimen_1"
+                                        android:background="@drawable/number_three" />
+
+                                    <TextView
+                                        android:id="@+id/tv_herothree"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="@dimen/dimen_5"
+                                        android:ellipsize="end"
+                                        android:maxLength="3"
+                                        android:singleLine="true"
+                                        android:text=""
+                                        android:textSize="@dimen/dimen_10" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/pktabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    app:tabBackground="@color/white"
+                    app:tabIndicatorColor="@color/indicator_selected_color"
+                    app:tabIndicatorHeight="2dp"
+                    app:tabMinWidth="20dp"
+                    app:tabPaddingEnd="8dp"
+                    app:tabPaddingStart="12dp"
+                    app:tabSelectedTextColor="@color/black"
+                    app:tabTextAppearance="@style/TabLayoutTextStyle"
+                    app:tabTextColor="@color/indicator_normal_color">
+                    <!--app:tabMaxWidth="200dp"-->
+                </android.support.design.widget.TabLayout>
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/pkadd_channel_iv"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:contentDescription=""-->
+<!--                    android:foreground="?android:attr/selectableItemBackground"-->
+<!--                    android:maxHeight="?attr/actionBarSize"-->
+<!--                    android:src="@drawable/ic_add"-->
+<!--                    android:visibility="gone"-->
+<!--                    tools:ignore="ContentDescription" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <!--<LinearLayout-->
+                <!--android:gravity="center"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--&gt;-->
+                <TextView
+                    android:id="@+id/tv_chalange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="挑战令" />
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="今天"-->
+                <!--/>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!---->
+                <!--android:gravity="center"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--&gt;-->
+                <TextView
+                    android:id="@+id/tv_pk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="PK中" />
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="后天"-->
+                <!--/>-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                <!--android:gravity="center"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--&gt;-->
+                <TextView
+                    android:id="@+id/tv_hero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="英雄榜" />
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pkview_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gb"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"></android.support.v4.view.ViewPager>
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

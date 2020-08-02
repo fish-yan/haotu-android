@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="colorAccent">@color/color_1a1a1a</color>
+    <color name="colorPrimary">#F3F3F3</color>
+    <color name="colorPrimaryDark">#F3F3F3</color>
+    <color name="light_gray">#FFA0A0A0</color>
+    <color name="linecolor">#30808080</color>
+    <color name="colorf9">#f9f9f9</color>
+    <color name="divider">#E5E5E5</color>
+    <color name="shadow">#AAEBEBEB</color>
+    <color name="common_bg">#FAFAFA</color>
+    <color name="content_bg">#F3F3F3</color>
+    <color name="gray">#8c8c8c</color>
+    <color name="gray_deep">#5c5c5c</color>
+    <color name="home_titmcolor">#B1B1B1</color>
+    <color name="color_main_line">#fafafa</color>
+    <color name="color_star_women_red">#CBCBCB</color>
+    <color name="alpha_gray">#CC646464</color>
+    <color name="theme_gray">#646464</color>
+    <color name="blue_deep">#7591e3</color>
+    <color name="alpha_05_black">#0D000000</color>
+    <color name="divide_line">#e8e8e8</color>
+    <color name="alpha_40_white">#66FFFFFF</color>
+    <color name="alpha_40_black">#66000000</color>
+    <color name="home_lab">#fd7e18</color>
+    <!--<color name="gray">#999999</color>-->
+    <color name="white">#ffffff</color>
+    <color name="gwhite">#F5F5F5</color>
+    <color name="gb">#F4F5F5</color>
+    <color name="shadblue">#32AAFF</color>
+    <color name="shadgray">#cccccc</color>
+    <!--<color name="gb">#e6e6e6</color>-->
+    <!--<color name="hitcolor">#DFE0E1</color>-->
+    <color name="textgraycolor">#8A8A8A</color>
+    <color name="red">#FF4040</color>
+    <color name="time_redcolor">#ff5151</color>
+    <color name="colorBrownPrimary">#795548</color>
+    <color name="colorBrownPrimaryDark">#5D4037</color>
+    <color name="colorBrownAccent">#FF4081</color>
+    <color name="colorBrownPrimaryCenter">#431d12</color>
+    <color name="color_sec_tags_bg">#FFFFFFFF</color>
+    <!--<color name="gray_deep">#5c5c5c</color>-->
+    <!--<color name="content_bg">#F3F3F3</color>-->
+    <!--text color-->
+    <color name="color_333333">#333333</color>
+    <color name="color_888888">#888888</color>
+    <color name="color_999999">#999999</color>
+
+    <color name="tabber_selected_color">#1a1a1a</color>
+    <color name="tabber_normal_color">#c6c6c6</color>
+
+    <color name="indicator_selected_color">#32abff</color>
+    <color name="homedayselect">#2b2b2b</color>
+    <color name="indicator_normal_color">#999999</color>
+    <color name="indicatsssor_selected_color">#fd7e18</color>
+    <color name="home_tiemcolor">#FF8330</color>
+    <color name="home_tiemcolorrand">#05AFA4</color>
+    <color name="home_tiemcolorrandtwo">#80A2FF</color>
+    <color name="color_adadad">#adadad</color>
+
+    <color name="divide_line_color">#dfdfdf</color>
+    <color name="divide_block_color">#f7f6f7</color>
+
+    <color name="color_1a1a1a">#1a1a1a</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_c5c5c5">#c5c5c5</color>
+    <color name="color_fafafa">#fafafa</color>
+    <color name="color_F8F8F8">#F8F8F8</color>
+    <color name="colorsearchhit_c8c8c8">#c8c8c8</color>
+    <color name="nodeColor">#C5C5C5</color>
+    <color name="nodeTextColor">#1A1A1A</color>
+    <color name="color_007aff">#007aff</color>
+    <color name="color_1890FF">#1890FF</color>
+    <color name="color_404040">#404040</color>
+    <color name="color_FF3A3D50">#FF3A3D50</color>
+    <color name="color_FFADADAD">#FFADADAD</color>
+    <color name="color_FFCFD2DA">#FFCFD2DA</color>
+    <color name="color_FFCB9D6D">#FFCB9D6D</color>
+    <color name="transparency_375">#60000000</color>
+    <color name="transplate">#00000000</color>
+    <color name="title_bg">#1788D0</color>
+    <color name="transparency">#00000000</color>
+    <color name="homefragtab">#8a8a8a</color>
+    <color name="homefragtabsolice">#DFE0E1</color>
+
+    <color name="sockinbg">#F8F8F8</color>
+    <color name="c1">#f1f1f1</color>
+    <color name="c2">#eeeeee</color>
+    <color name="c3">#dedede</color>
+    <color name="c4">#cecece</color>
+    <color name="c5">#9b9b9b</color>
+    <color name="c6">#646464</color>
+    <color name="c7">#383838</color>
+    <color name="c8">#ff6c6c</color>
+    <color name="c9">#cc3333</color>
+    <color name="c10">#e79e99</color>
+    <color name="c23">#FFF5EB</color>
+
+    <color name="c25">#ffaa66cc</color>
+    <color name="c11">#ffe8e7</color>
+    <color name="c12">#ffffff</color>
+    <color name="c13">#000000</color>
+    <color name="c14">#960000</color>
+    <color name="c15">#f8f8f8</color>
+    <color name="c16">#c4c4c4</color>
+    <color name="c17">#252525</color>
+    <color name="c18">#e8e8e8</color>
+    <color name="c19">#e11c00</color>
+    <color name="c20">#1f1f1f</color>
+    <color name="c21">#f28f25</color>
+    <color name="c22">#86BA63</color>
+
+    <color name="transparent_background_button">#11000000</color>
+    <color name="transparent_background">#ffffff</color>
+    <color name="color_9D9D9D">#9D9D9D</color>
+    <color name="color_F7F7F7">#F7F7F7</color>
+
+    <color name="color_bg">#F7F7F7</color>
+    <color name="color_FFA700">#FFA700</color>
+    <color name="color_F0F0F0">#F0F0F0</color>
+    <color name="color_FF5F5F">#FF5F5F</color>
+    <color name="color_BFBFBF">#BFBFBF</color>
+    <color name="color_FA375C">#FA375C</color>
+    <color name="color_9A6500">#9A6500</color>
+    <color name="color_5FC1FF">#5FC1FF</color>
+    <color name="color_4B4B4B">#4B4B4B</color>
+    <color name="color_CECECE">#CECECE</color>
+    <color name="color_e6e6e6">#e6e6e6</color>
+</resources>

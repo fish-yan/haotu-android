@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation(name: 'LiteAVSDK_UGC_6.7.7734', ext: 'aar')
+//    api project(':player')
+    implementation 'com.android.support:appcompat-v7:26.+'
+    implementation 'com.android.support:recyclerview-v7:26.+'
+    implementation 'com.squareup.okhttp3:okhttp:3.9.0'
+    implementation 'com.squareup.okio:okio:1.13.0'
+    implementation files('libs\\qcloud-foundation-1.5.6.jar')
+    implementation files('libs\\cosxml-5.4.20.jar')
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+}

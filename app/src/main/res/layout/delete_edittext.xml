@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <EditText
+        android:id="@+id/tv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:textSize="16sp"
+        android:hint="请输入手机号码"
+        android:inputType="number"
+        android:textColorHint="@color/color_c5c5c5"
+        android:textColor="@color/color_1a1a1a"
+        android:maxLength="13"/>
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/logon_ic_delete"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"/>
+</RelativeLayout>

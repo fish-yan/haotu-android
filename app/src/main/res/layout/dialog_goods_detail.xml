@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/rel_root">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginBottom="50dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            android:paddingTop="16dp">
+            <ImageView
+                android:id="@+id/iv_cover"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:background="#9999"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/iv_cover"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="价格:"
+                        android:textColor="@color/indicator_selected_color"/>
+                    <com.dmeyc.dmestoreyfm.wedgit.PriceView
+                        android:id="@+id/price_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:price_textsize="15sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已选 : "
+                        android:textColor="@color/color_1a1a1a"/>
+                    <TextView
+                        android:id="@+id/tv_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="购买详情"
+                        android:textColor="@color/color_1a1a1a"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_1a1a1a"
+            android:text="定制尺码"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/tv_address_manager"
+            style="@style/mine_common_tv"
+            android:layout_height="50dp"
+            android:hint="请选择尺码"
+            android:layout_marginTop="10dp"/>
+        <View style="@style/divide_line" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"/>
+        <com.dmeyc.dmestoreyfm.wedgit.AmountView
+            android:id="@+id/amount_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
+    </LinearLayout>
+
+    <View style="@style/bottom_shadow"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/tv_add_car"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/add_shop"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/color_1a1a1a" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divide_line_color"/>
+        <TextView
+            android:id="@+id/tv_buy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="立刻购买"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/color_1a1a1a" />
+        <TextView
+            android:id="@+id/tv_tailor_more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="细节定制"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@color/home_lab"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+        android:id="@+id/civ_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:civ_left_hint_str="请输入商品标题"
+        app:civ_type="2" />
+
+    <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+        android:id="@+id/civ_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:civ_left_hint_str="请输入商品价格"
+        app:civ_type="2" />
+
+    <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+        android:id="@+id/civ_cost_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:civ_left_hint_str="请输入商品折后价格"
+        app:civ_type="2" />
+
+    <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+        android:id="@+id/civ_type"
+        app:civ_type="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:civ_left_hint_str="请选择商品标签,多个请用逗号分开" />
+
+    <com.dmeyc.dmestoreyfm.wedgit.UploadPictureView
+        android:id="@+id/upv_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_404040"
+        app:vup_tips="请上传商品图片 200*200" />
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <View
+        android:background="@color/indicator_selected_color"
+        android:id="@+id/status_view"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:id="@+id/iv_home_search"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="19dp"
+            android:src="@drawable/icon_search"/>
+        <ImageView
+            android:id="@+id/iv_home_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_logo"
+            android:layout_centerInParent="true"/>
+
+        <com.dmeyc.dmestoreyfm.wedgit.ShopBag
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_gravity="center_horizontal"
+        app:tabIndicatorColor="@color/indicator_selected_color"
+        app:tabSelectedTextColor="@color/indicator_selected_color"
+        app:tabTextColor="@color/indicator_normal_color"
+        app:tabIndicatorHeight="2dp"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="14px"
+            android:background="@drawable/shape_divide_up"/>
+    </RelativeLayout>
+</LinearLayout>

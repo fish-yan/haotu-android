@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+
+    <LinearLayout
+        android:id="@+id/ll_orderset"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_80"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:id="@+id/tv_numb"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            />
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/iv_set1"
+                android:layout_centerVertical="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/set_rabbit"
+                />
+            <TextView
+                android:layout_below="@+id/iv_set1"
+                android:id="@+id/tv_set1name"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/iv_set2"
+                android:layout_centerVertical="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/set_rabbit"
+                />
+            <TextView
+                android:layout_below="@+id/iv_set2"
+                android:id="@+id/tv_set2name"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

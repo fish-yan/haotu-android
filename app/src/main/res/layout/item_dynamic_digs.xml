@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        
+        <com.dmeyc.dmestoreyfm.wedgit.CircleImageView
+            android:id="@+id/iv_user_pic"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:src="#ebebeb"
+            android:layout_marginLeft="14dp"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名"
+                android:textSize="@dimen/dimen_18"
+                android:textColor="#466889"
+                />
+            <TextView
+                android:id="@+id/user_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1小时前"
+                android:textSize="@dimen/dimen_12"
+                android:textColor="#969696"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_follow"
+            android:layout_width="60dp"
+            android:layout_height="26dp"
+            android:layout_marginRight="14dp"
+            android:text="关注"
+            android:textColor="#32aaff"
+            android:gravity="center"
+            android:background="@drawable/shap_conner_blue"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0.5"
+        android:background="#cccccc"
+        android:layout_marginLeft="41dp"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

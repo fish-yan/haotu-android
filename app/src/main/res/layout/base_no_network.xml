@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_father_no_newwork"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title_bar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="89dp"
+        android:text="未连接网络"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:text="网络不给力，请检查手机信号，再次刷新页面试试"
+        android:textColor="@color/color_999999" />
+
+    <TextView
+        android:id="@+id/text_rush"
+        android:layout_width="112.5dp"
+        android:layout_height="@dimen/dimen_35"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:background="@drawable/shape_no_network"
+        android:gravity="center"
+        android:text="重新连接"
+        android:textColor="@color/color_1a1a1a"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_width="146.5dp"
+        android:layout_height="205dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_90"
+        android:src="@drawable/wifi_img" />
+</LinearLayout>

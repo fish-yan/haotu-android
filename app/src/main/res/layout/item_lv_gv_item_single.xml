@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_ll_root">
+
+    <TextView
+        android:visibility="gone"
+        android:textSize="14dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/color_1a1a1a"
+        android:textStyle="bold"
+        android:id="@+id/tv_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        />
+    <com.dmeyc.dmestoreyfm.utils.GradeViewForScrollView
+        android:visibility="gone"
+        android:numColumns="3"
+        android:id="@+id/gv_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+<LinearLayout
+    android:visibility="gone"
+    android:id="@+id/ll_good"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rl_shoppic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/item_iv_cover_pic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_180"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:id="@+id/item_iv_istailor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:src="@drawable/shoping_ic_tab_dingzhi" />
+    </RelativeLayout>
+
+    <TextView
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:id="@+id/item_tv_brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gucci"
+        android:textSize="12sp"
+        android:textColor="@color/color_1a1a1a"
+        android:layout_marginTop="9dp"/>
+    <TextView
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:id="@+id/item_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="毛衣"
+        android:textSize="12sp"
+        android:textColor="@color/gray"
+        android:layout_marginTop="9dp"/>
+    <RelativeLayout
+        android:id="@+id/rl_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可定制"
+            android:textSize="12sp"
+            android:textColor="@color/gray"
+            android:visibility="gone"/>
+        <com.dmeyc.dmestoreyfm.wedgit.PriceView
+            android:id="@+id/item_tv_priceview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>
+
+</LinearLayout>

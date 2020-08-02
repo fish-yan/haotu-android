@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_father"
+    android:layout_width="wrap_content"
+    android:layout_height="220dp"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/dimen_20">
+
+    <ImageView
+        android:id="@+id/img_show"
+        android:layout_width="93dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="title"
+        android:textSize="13sp"
+        android:textColor="@color/color_1a1a1a"/>
+    <TextView
+        android:id="@+id/text_num"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="num"
+        android:textSize="12sp"
+        android:textColor="@color/color_999999"/>
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="price"
+        android:textSize="13sp"
+        android:textColor="@color/color_1a1a1a"/>
+</LinearLayout>

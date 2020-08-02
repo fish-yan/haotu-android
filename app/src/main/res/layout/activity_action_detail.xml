@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/cl_bottom"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+                android:id="@+id/civ_club_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:civ_type="9" />
+
+            <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+                android:id="@+id/civ_match_site"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:civ_type="10" />
+
+            <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+                android:id="@+id/civ_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:civ_type="10" />
+
+            <com.dmeyc.dmestoreyfm.wedgit.CustomItemView1
+                android:id="@+id/civ1_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:civ1_left_str=""
+                app:civ1_tip_str=""
+                app:civ1_type="1" />
+
+            <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+                android:id="@+id/civ_addr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:civ_left_str=""
+                app:civ_type="11" />
+
+            <com.dmeyc.dmestoreyfm.wedgit.HeaderIconView
+                android:id="@+id/headerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="21.5dp"
+                android:paddingBottom="20.5dp"
+                app:hiv_type="1" />
+
+            <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.5dp"
+                app:civ_left_str="活动介绍"
+                app:civ_type="10" />
+
+            <TextView
+                android:id="@+id/tv_instruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="14.5dp"
+                android:paddingTop="19.5dp"
+                android:paddingRight="17dp"
+                android:paddingBottom="14.5dp"
+                tools:text="大公网12月5日讯（记者 何花）12月4日，2018-2
+019赛季中国羽毛球俱乐部超级联赛拉开大幕，8支
+队伍将在4个赛区展开激烈争夺。新赛季羽超联赛
+的8支队伍将先进行14轮双循环赛，12月4日、6日" />
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/tv_tip_title"
+            style="@style/text_14_9D9D9D"
+            android:layout_marginLeft="15.5dp"
+            android:layout_marginTop="11dp"
+            android:text="报名截止还有"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.dmeyc.dmestoreyfm.wedgit.CountdownView
+            tools:visibility="visible"
+            android:visibility="gone"
+            android:id="@+id/countdownView"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:text="5天5小时7分39秒"
+            android:textColor="@color/time_redcolor"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_tip_title"
+            app:layout_constraintLeft_toRightOf="@id/tv_tip_title"
+            app:layout_constraintTop_toTopOf="@id/tv_tip_title" />
+        <CheckBox
+            android:id="@+id/cb_protocol"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="13dp"
+            android:background="@drawable/selector_checkbox_protocol"
+            android:button="@null"
+            android:checked="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/tv_tip_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_tip_title" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/text_14_9D9D9D"
+            android:layout_marginLeft="2.5dp"
+            android:text="我已同意俱乐部活动"
+            app:layout_constraintBottom_toBottomOf="@id/cb_protocol"
+            app:layout_constraintLeft_toRightOf="@id/cb_protocol"
+            app:layout_constraintTop_toTopOf="@id/cb_protocol" />
+
+        <TextView
+            android:id="@+id/tv_protocol"
+            style="@style/text_14_9D9D9D"
+            android:layout_marginLeft="2.5dp"
+            android:text="《免责条款》"
+            android:textColor="@color/color_5FC1FF"
+            app:layout_constraintBottom_toBottomOf="@id/cb_protocol"
+            app:layout_constraintLeft_toRightOf="@id/textView1"
+            app:layout_constraintTop_toTopOf="@id/cb_protocol" />
+
+        <TextView
+            android:id="@+id/tv_enter"
+            style="@style/button_wrap_yellow"
+            android:layout_marginRight="17.5dp"
+            android:background="@drawable/selector_btn_bg"
+            android:text="立即报名"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

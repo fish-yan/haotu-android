@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rei_item_root"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/item_tv_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_1a1a1a"
+            tools:text="品牌/设计师  "
+            android:textSize="11sp"
+            android:drawableRight="@drawable/ic_triangle_black"
+            android:drawablePadding="10dp"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/tuikuan"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toLeftOf="@+id/item_tv_status"-->
+            <!--android:text="退款"-->
+            <!--android:textSize="12sp"-->
+            <!--android:paddingRight="@dimen/dimen_15"/>-->
+        <TextView
+            android:id="@+id/item_tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            tools:text="待付款"
+            android:textSize="11sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/indicator_selected_color" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <ImageView
+            android:id="@+id/item_iv_cover"
+            android:layout_width="61dp"
+            android:layout_height="79dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"/>
+        <RelativeLayout
+            android:id="@+id/rl_to_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_marginRight="@dimen/dimen_20"
+                    android:id="@+id/item_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_1a1a1a"
+                    android:text="黑色刺绣针织衫"/>
+                <com.dmeyc.dmestoreyfm.wedgit.CountView
+                    android:id="@+id/item_countview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/item_tv_custom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="定制"
+                android:textSize="12sp"
+                android:layout_centerVertical="true"
+                android:translationY="-3dp"
+                android:textColor="@color/gray"/>
+
+            <com.dmeyc.dmestoreyfm.wedgit.PriceView
+                android:id="@+id/item_priceview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:sign_color="@color/color_1a1a1a"
+                app:price_color="@color/color_1a1a1a"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

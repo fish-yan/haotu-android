@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include layout="@layout/base_refresh"/>
+    <LinearLayout
+        android:id="@+id/ll_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/empty_text"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingExtra="7dp"
+            android:gravity="center"
+            tools:text="您还没有收藏心仪的单品哟,快去将它们保存到这里吧~"/>
+        <TextView
+            android:id="@+id/empty_click"
+            android:layout_width="176dp"
+            android:layout_height="45dp"
+            android:background="@drawable/shape_1radius_1a"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="40dp"
+            tools:text="添加单品"/>
+    </LinearLayout>
+</RelativeLayout>

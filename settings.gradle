@@ -1,0 +1,9 @@
+include ':app', ':IMKit', ':IMLib', ':PictureViewer', ':mylibrary', ':lib', ':Sight', ':library', ':CallLib', ':CallKit', ':calander', ':VerticalBannerView'
+include ':libsuperplayer'
+include ':lvb'
+include ':player'
+include ':videoediter'
+include ':videojoiner'
+include ':videorecorder'
+include ':videouploader'
+

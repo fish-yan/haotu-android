@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_item_icon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="14.5dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_item_left"
+        style="@style/text_16_black"
+        android:layout_width="0dp"
+        android:layout_marginLeft="8.5dp"
+        android:layout_marginTop="23.5dp"
+        android:layout_marginBottom="23.5dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColorHint="@color/color_9D9D9D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/iv_item_icon"
+        app:layout_constraintRight_toLeftOf="@+id/tv_item_right"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginLeft="23.5dp" />
+
+    <EditText
+        android:id="@+id/et_item_left"
+        style="@style/text_17_black"
+        android:layout_width="0dp"
+        android:background="@null"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColorHint="@color/color_9D9D9D"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/tv_item_left"
+        app:layout_constraintRight_toRightOf="@id/tv_item_left"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="" />
+
+    <ImageView
+        tools:visibility="visible"
+        android:id="@+id/iv_item_right_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_back_gray"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_item_right"
+        style="@style/text_16_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/iv_item_right_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginRight="22dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#F7F7F7"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/toggle_button_item"
+        android:layout_width="51dp"
+        android:layout_height="31dp"
+        android:layout_marginRight="22.5dp"
+        android:background="@android:color/transparent"
+        android:button="@drawable/toggle_btn"
+        android:checked="true"
+        android:textOff=""
+        android:textOn=""
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.dmeyc.dmestoreyfm.wedgit.TimerTaskTextView
+        android:id="@+id/ttv_item_code"
+        android:layout_width="88dp"
+        android:layout_height="29dp"
+        android:layout_marginRight="27.5dp"
+        android:background="@drawable/shap_graycircle"
+        android:gravity="center"
+        android:text="获取验证码"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

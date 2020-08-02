@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_head_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:paddingTop="17dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_look_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_look_more_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableRight="@drawable/arrow_right"
+            android:drawablePadding="10dp"
+            android:padding="19dp"
+            android:text="查看更多群成员" />
+    </RelativeLayout>
+
+
+    <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+        android:id="@+id/civ_club_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:civ_left_str="" />
+
+    <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+        android:id="@+id/civ_club_qrcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:civ_left_str="俱乐部二维码" />
+
+    <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+        android:id="@+id/civ_club_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:civ_left_str="俱乐部群公告" />
+
+    <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+        android:id="@+id/civ_disturb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:civ_left_str="消息免打扰"
+        app:civ_type="3" />
+
+    <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+        android:id="@+id/civ_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:civ_left_str="举报" />
+
+    <TextView
+        android:id="@+id/tv_dissolve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/dimen_23"
+        android:text="退出俱乐部"
+        android:textColor="@color/color_FF5F5F"
+        android:textSize="16.5sp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

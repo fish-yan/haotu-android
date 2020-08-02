@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp">
+
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:id="@+id/tv_card_title"
+            style="@style/text_16_black"
+            android:text="我的卡"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_total_card"
+            style="@style/text_14_9D9D9D"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_card_title"
+            app:layout_constraintLeft_toRightOf="@+id/tv_card_title"
+            tools:text="共1张" />
+
+        <ImageView
+            android:id="@+id/iv_add_card"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="27.5dp"
+            android:paddingLeft="7dp"
+            android:paddingTop="7dp"
+            android:src="@drawable/icon_add_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="6dp"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

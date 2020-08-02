@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="scrollview"/>
+
+    <item type="id" name="statusbarutil_fake_status_bar_view" />
+    <item type="id" name="statusbarutil_translucent_view" />
+
+    <item type="id" name="tag" />
+    <item name="np__increment" type="id" />
+    <item name="np__decrement" type="id" />
+
+    <item name="input_options_basic" type="id"/>
+    <item name="input_options_bottom_type" type="id"/>
+    <item name="input_options_color_blue" type="id"/>
+    <item name="input_options_color_brown" type="id"/>
+    <item name="input_options_color_current" type="id"/>
+    <item name="input_options_color_drak_blue" type="id"/>
+    <item name="input_options_color_green" type="id"/>
+    <item name="input_options_color_group" type="id"/>
+    <item name="input_options_color_light_green" type="id"/>
+    <item name="input_options_color_lite_blue" type="id"/>
+    <item name="input_options_color_more_icon" type="id"/>
+    <item name="input_options_color_orange" type="id"/>
+    <item name="input_options_color_pink" type="id"/>
+    <item name="input_options_color_purple" type="id"/>
+    <item name="input_options_color_red" type="id"/>
+    <item name="input_options_color_white" type="id"/>
+    <item name="input_options_color_yellow" type="id"/>
+    <item name="input_options_group_textsize" type="id"/>
+    <item name="input_options_group_type" type="id"/>
+    <item name="input_options_medium_textsize" type="id"/>
+    <item name="input_options_more" type="id"/>
+    <item name="input_options_rl_type" type="id"/>
+    <item name="input_options_small_textsize" type="id"/>
+    <item name="input_options_top_type" type="id"/>
+    <item name="aspect_fit_parent" type="id"/>
+    <item name="tag_first" type="id"></item>
+</resources>

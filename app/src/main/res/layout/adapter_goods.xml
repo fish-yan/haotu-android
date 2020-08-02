@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12.5dp"
+        android:layout_marginBottom="12.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/text_15_black"
+        android:layout_marginLeft="12.5dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_icon"
+        app:layout_constraintTop_toTopOf="@+id/iv_icon"
+        tools:text="30天减脂小蛮腰训练课程" />
+
+    <TextView
+        android:id="@+id/tv_tips"
+        style="@style/text_15_black"
+
+        android:layout_marginTop="5dp"
+        android:textColor="@color/color_9D9D9D"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        tools:text="减脂瘦身" />
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/text_wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="￥"
+        android:textColor="@color/color_FF5F5F"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_tips"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tips" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        style="@style/text_15_black"
+        android:textColor="@color/color_FF5F5F"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintLeft_toRightOf="@id/textView6"
+        tools:text="99" />
+
+    <com.dmeyc.dmestoreyfm.wedgit.GoodsTagView
+        android:id="@+id/goodsTagView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="22.5dp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_price" />
+</android.support.constraint.ConstraintLayout>

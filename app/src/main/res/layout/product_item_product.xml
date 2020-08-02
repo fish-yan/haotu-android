@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <LinearLayout
+        android:id="@+id/ll_root1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="350dp"
+        android:paddingTop="20dp"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.dmeyc.dmestoreyfm.wedgit.PriceView
+                android:id="@+id/price_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:price_textsize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"
+                android:textColor="@color/indicator_selected_color"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/indicator_selected_color"
+                android:text=" / 件"/>
+            <TextView
+                android:id="@+id/tv_des_custom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:textSize="12sp"
+                android:textColor="@color/color_c5c5c5"
+                android:text="定制类商品7天发货"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_proname"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rel_common_show_select"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/tv_selected"
+                style="@style/mine_common_tv"
+                android:text="面料规格选择" />
+            <View style="@style/divide_line"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:textSize="16sp"
+            android:textColor="@color/color_1a1a1a"
+            android:text="产品介绍"/>
+
+        <TextView
+            android:id="@+id/tv_product_introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="12sp"
+            android:textColor="@color/color_1a1a1a"
+            android:lineSpacingExtra="7dp"
+            android:layout_marginBottom="35dp"
+            tools:text="绒也是大热的元素丝绒也是大热的元素。"/>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/divide_block_color"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

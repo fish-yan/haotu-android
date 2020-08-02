@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/gb"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical">
+        <!--?attr/actionBarSize-->
+        <ImageView
+            android:id="@+id/iv_left_title_bar"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="19dp"
+            android:src="@drawable/ic_return_black"/>
+        <TextView
+            android:id="@+id/tv_left_title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="充值"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_1a1a1a"
+            android:textSize="16dp"/>
+        <TextView
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/tv_right_title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:text="明细"
+            android:background="@color/indicator_selected_color"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/iv_right_title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"/>
+        <View
+            android:id="@+id/v_divide"
+            style="@style/divide_line"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/gb"-->
+        <!--/>-->
+<LinearLayout
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="充值到余额"
+       android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_50"
+        />
+<!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="@color/gb"-->
+    <!--/>-->
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+
+            android:layout_marginLeft="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textSize="@dimen/dimen_30"
+           android:textColor="@color/black"
+            />
+   <EditText
+       android:inputType="number"
+       android:layout_marginLeft="5dp"
+       android:layout_weight="1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@null"
+       android:hint="请输入充值金额"
+       android:textSize="30dp"
+       android:textColor="@color/black"
+       />
+    </LinearLayout>
+</LinearLayout>
+
+    <TextView
+        android:layout_marginTop="190dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="下一步"
+      android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/shap_conner_orange"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+
+        />
+</LinearLayout>

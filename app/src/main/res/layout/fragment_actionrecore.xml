@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ListView
+        android:layout_above="@+id/tv_pub"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_record"
+        />
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tv_nodata"
+        android:text="暂无数据"
+        />
+    <RelativeLayout
+        android:background="@color/white"
+        android:id="@+id/tv_pub"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        >
+
+    </RelativeLayout>
+    <com.dmeyc.dmestoreyfm.wedgit.MyPlusTextView
+        android:id="@+id/tv_pulish"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginBottom="25dp"
+        />
+</RelativeLayout>

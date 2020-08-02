@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_title"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/include"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        app:layout_constraintTop_toBottomOf="@id/include"
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp">
+
+        <com.scwang.smartrefresh.header.StoreHouseHeader
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:shhLineWidth="2dp"
+            app:shhText="dmeycstore" />
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.youth.banner.Banner
+                                android:id="@+id/banner"
+                                android:layout_width="match_parent"
+                                android:layout_height="140dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/tv_scan_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="32dp"
+                                android:layout_marginBottom="4dp"
+                                android:background="@drawable/shape_living_scan_count_bg"
+                                android:gravity="center"
+                                android:minWidth="91dp"
+                                android:paddingLeft="13dp"
+                                android:paddingRight="13dp"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                tools:text="2000人浏览" />
+                        </android.support.constraint.ConstraintLayout>
+
+                        <com.dmeyc.dmestoreyfm.wedgit.HeaderIconView
+                            android:id="@+id/headerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:paddingTop="25dp"
+                            android:paddingBottom="25dp"
+                            android:visibility="gone"
+                            app:hiv_type="1"
+                            tools:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/tv_activity_name"
+                            style="@style/text_16_black"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="0.5dp"
+                            android:background="@color/white"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="12.5dp"
+                            android:paddingBottom="12.5dp"
+                            android:privateImeOptions="15dp"
+                            tools:text="2019年卡莱特女双霸王花比赛松江站王花比赛松
+王花比赛松江站江站" />
+                    </LinearLayout>
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tablayout"
+                    style="@style/tablayout_normal" />
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.5dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </android.support.design.widget.CoordinatorLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <TextView
+        android:id="@+id/tv_count"
+        app:layout_constraintTop_toTopOf="@id/include"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        style="@style/text_14_9D9D9D"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_living_count_bg"
+        tools:text="0/0"
+        android:layout_height="30dp" />
+
+</android.support.constraint.ConstraintLayout>

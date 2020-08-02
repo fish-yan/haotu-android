@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.dmeyc.dmestoreyfm.wedgit.SearchTitleView
+        android:id="@+id/searchTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_history"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/searchTitleView" />
+
+    <TextView
+        tools:visibility="visible"
+        android:visibility="gone"
+        android:id="@+id/tv_hot_title"
+        android:drawablePadding="3dp"
+        style="@style/text_16_black"
+        android:layout_marginLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp"
+        android:text="大家在搜"
+        android:drawableBottom="@drawable/shape_bottom_line_w11"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_history" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/rv_history" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_hot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_hot_title" />
+</android.support.constraint.ConstraintLayout>

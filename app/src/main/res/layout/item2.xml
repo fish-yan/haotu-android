@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_ll"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:scaleType="fitCenter"
+        android:transitionName="transitionImg"/>
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="2dp"
+        android:text="三防免烫衬衫五色"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:textColor="@color/color_333333"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="¥ 555"
+        android:textColor="#e11"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"/>
+</LinearLayout>

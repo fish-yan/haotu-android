@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--&gt;-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="颜色"
+            android:textColor="@color/color_1a1a1a"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:drawableLeft="@drawable/custom_bar_orange"
+            android:drawablePadding="10dp"/>
+
+        <com.dmeyc.dmestoreyfm.wedgit.flowview.AutoFlowLayout
+            android:id="@+id/colorFlowLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="22dp"/>
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_marginTop="-20dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--&gt;-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="尺码"
+            android:textColor="@color/color_1a1a1a"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:drawableLeft="@drawable/custom_bar_orange"
+            android:drawablePadding="10dp"/>
+
+        <com.dmeyc.dmestoreyfm.wedgit.flowview.AutoFlowLayout
+            android:id="@+id/sizeFlowLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="22dp"/>
+    <!--</LinearLayout>-->
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="10dp"
+    android:background="@color/gwhite"
+    />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_setmeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      />
+
+
+    <!--<View-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="10dp"-->
+        <!--android:background="@color/gray"-->
+        <!--/>-->
+
+</LinearLayout>

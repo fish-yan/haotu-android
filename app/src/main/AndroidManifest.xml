@@ -1,0 +1,941 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dmeyc.dmestoreyfm">
+    <!-- HMS-SDK引导升级HMS功能，访问OTA服务器需要网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- HMS-SDK引导升级HMS功能，保存下载的升级包需要SD卡写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 检测wifi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 为了获取用户手机的IMEI，用来唯一的标识用户。 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 如果是安卓8.0，应用编译配置的targetSdkVersion>=26，请务必添加以下权限 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <!-- <PushEventReceiveruses-permission android:name="android.permission.CHANGE_WIFI_STATE"></PushEventReceiveruses-permission> -->
+    <!-- 用于访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <meta-data
+        android:name="android.max_aspect"
+        android:value="2.1" />
+
+    <application
+        android:name=".base.BaseApp"
+        android:allowBackup="true"
+        android:icon="@drawable/yfm_rabitlogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyAppTheme"
+        tools:replace="android:icon,android:theme,android:allowBackup">
+        <activity android:name=".video.webh5.H5Activity"></activity>
+        <activity android:name=".video.systeminfo.SystemInfoActivity" />
+        <activity
+            android:name=".video.shpodetail.ShopDetailActivity"
+            android:windowSoftInputMode="stateHidden"
+
+            /> <!-- <meta-data -->
+        <!-- android:name="UMENG_APPKEY" -->
+        <!-- android:value="5c19ed4ff1f5565bd400029b"/> -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5cd3e95b0cafb255ff0010d6" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="dmestoreyfm" />
+
+        <!--生产-->
+         <meta-data
+         android:name="RONG_CLOUD_APP_KEY"
+         android:value="8w7jv4qb83ahy"/>
+
+        <!--测试-->
+        <!--<meta-data-->
+            <!--android:name="RONG_CLOUD_APP_KEY"-->
+            <!--android:value="mgb7ka1nmdftg" />-->
+
+        <activity android:name=".ui.SplashActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="5a294a3b576cf70f8882ea4998cf4b62" />
+
+        <service android:name="com.amap.api.location.APSService" /> <!-- <activity -->
+        <!-- android:name="com.dmeyc.dmestoreyfm.ui.YFMSplashActivity" -->
+        <!-- android:icon="@drawable/yfm_rabitlogo" -->
+        <!-- android:launchMode="singleTask" -->
+        <!-- android:theme="@style/AppTheme.NoActionBarSplash" -->
+        <!-- android:windowSoftInputMode="adjustPan"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- android:launchMode="singleTask" -->
+        <activity
+            android:name=".ui.YFMIndicatoActivity"
+            android:icon="@drawable/yfm_rabitlogo"
+            android:theme="@style/AppTheme.NoActionBarSplash"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.YFMSplashActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.BMainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.CommInforActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.ChangeBackActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.CommIntroEditeActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.ProdDetailActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.MatchRuleEditActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.EquInfromationActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.H5PicLibActivty"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.H5ShareWebviewActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.NoticeShowActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.BclientSocketInPKActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.BannerClickActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.CommActionShowActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.MyJoinCommActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.BigActionActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.BigActionInforActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.BigActionPersonSubmitActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.SystemMacthResultActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.BigActionEducationActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.BigCreartCommListActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.CommToSigupActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.BannerSummentActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.CheckBigActionActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.MyCreatCommActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.MyCommEditeActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.GroupnameChangeActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.CourseItemActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.BClientPKdetail"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.TrueNameActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.SystemPromitSettingActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.MeassageSttingActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.BussinIntroActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.FinishTeachInfroActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.EducationBackActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.BClientSorckerInActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.H5UploadeActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.ToCheckListActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.MySelfCertifyActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.VacancyActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.BillActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.CopperateActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.AllActionActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.BClientProjectActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.PhoneLoginActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.BClientPromotionActivitys"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.AddPromotionActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.LeaderActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.PlaceAlbumActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.NickNameChangeActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.BirthDayChangeActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.SexChageActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.CommperPublishNextActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.TeachNextActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.MyPromotionActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.PersonInfromationActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.UploadeImagUrlActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.HasInActionMemBerActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.CommCheckActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.SharePicInActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.ReCharegeSetActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.ChangeYFMPassweodActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.ReversToMeActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.AboutMeActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.HistoryProdActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".adapter.photo.AlbumActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".adapter.photo.AlbumChanceActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.PKMyCreatCommListActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.PkResultActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".adapter.photo.ImageDelActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.YFMLoginActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.amap.api.navi.AmapRouteActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".ui.TestWebVeiw"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.InventoryActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.PublicizeActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.MyCourseActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.ChartInforActivity" />s
+        <activity
+            android:name=".ui.MainActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.order.WholeOrderStatusActivity" />
+        <activity android:name=".ui.SearchGoodsActivity" />
+        <activity
+            android:name=".ui.PkingActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.HeroRankActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.NewPkResultActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.HeroDetailActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".video.newbrand.NewBrandActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.CourseBuyActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.YFMSettingActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.VipManagerActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.GoBuyInforActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.CourseActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.VipListActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.SubmitOrderActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.CommSettingActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.MyCommActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.MyAppointActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.MachesResultActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.VipWareActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.WithDrawActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.PlaceInforActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.DetailActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.ActionRecordActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.SportActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.ReChargeActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.TeachInforActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.PublishActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.CalculateActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.ForgetPasswordActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.CommInActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.PKInforActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.PlaceInActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.RegistActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.MyAccountActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.AddCreaditActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.NameChangeActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.CreditCarActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.CulbResultActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".video.releasedynamic.ReleasedynamicActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".video.merchantentry.register.MerchantentryRegisterActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".video.merchantentry.claim.ClaimActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".video.merchantentry.createstore.CreatStoreActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".video.dynamicdetail.digs.DigsActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".video.dynamicdetail.DynamicDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".video.dynamicdetail.DynamicPlayDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".video.videoplaytest.VideoPlayTestActvity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".video.topic.TopicListActivity" />
+        <activity android:name=".video.topic.addtopic.AddTopicActivity" />
+        <activity
+            android:name=".utils.photoselector.AlbumGridActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".utils.photoselector.AlbumListActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".utils.photoselector.CropViewActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".video.videolist.HtVideoEditChooseActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".video.releasedynamic.associated.AssociatedListActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".video.releasedynamic.addassociated.AddAssociatedActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".video.merchantentry.register.TeachRegisterActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".video.pkactivity.NewPkActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".ui.SettingActivity" />
+        <activity android:name=".ui.WebviewActivity" />
+        <activity android:name=".ui.MakeOrderActivity" />
+        <activity
+            android:name=".ui.chat.ConversationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.dmeyc.dmestoreyfm"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity> <!-- &lt;!&ndash;会话界面&ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name=".chatroom.ConversationActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden|adjustResize"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.VIEW" /> -->
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- <data -->
+        <!-- android:host="com.espar.www.esparclientios" -->
+        <!-- android:pathPrefix="/conversation/" -->
+        <!-- android:scheme="rong" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name=".ui.chat.ConversationListActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden|adjustResize"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.VIEW" /> -->
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- <data -->
+        <!-- android:host="io.rong.fast" -->
+        <!-- android:pathPrefix="/conversationlist" -->
+        <!-- android:scheme="rong" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".ui.MemberListActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.TeachInActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".ui.ProductActivity" />
+        <activity android:name=".ui.LogisticsActivity" />
+        <activity android:name=".ui.TotalMessageActivity" />
+        <activity android:name=".ui.EditAddressActivity" />
+        <activity android:name=".ui.ManageAddressActivity" />
+        <activity android:name=".ui.ShopCarActivity" />
+        <activity android:name=".ui.AboutUsActivity" />
+        <activity android:name=".ui.CouponsActivity" />
+        <activity android:name=".ui.order.OrderBackActivity" />
+        <activity android:name=".ui.BindMobileActivity" />
+        <activity android:name=".ui.EditMobileActivity" />
+        <activity android:name=".ui.AttentionActivity" />
+        <activity android:name=".ui.OrderDetailActivity" />
+        <activity android:name=".ui.BrandDetailActivity" />
+        <activity android:name=".ui.PresonInfoActivity" />
+        <activity android:name=".ui.TailorRecordActivity" />
+        <activity
+            android:name=".ui.TailorDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.WeightHeightActivity" />
+        <activity android:name=".ui.ApplyPayBackActivity" />
+        <activity android:name=".ui.BackLogisticsActivity" />
+        <activity android:name=".ui.BackOrderDetailActivity" />
+        <activity
+            android:name=".ui.EvaluateActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.photo.FrontTailorActivity" />
+        <activity android:name=".ui.FeedBackActivity" />
+        <activity android:name=".ui.NewsChannelActivity" /> <!-- other activity -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1108954860" />
+                <!-- <data android:scheme="tencent1109501811" /> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:replace="android:configChanges" />
+        <activity
+            android:name=".ui.CommperInActiivty"
+            android:exported="true"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.ProdRecordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".video.report.ReportActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.CommNoticeActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.YfmBundTherActiivty"
+            android:exported="true"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.CacluliteListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.PlaceWaiteActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.PersonalTailorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            tools:replace="android:configChanges" />
+        <activity
+            android:name=".ui.BClientChangeSetActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            tools:replace="android:configChanges" />
+        <activity
+            android:name=".ui.BClientPublishActionActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustResize"
+            tools:replace="android:configChanges" /> <!-- android:windowSoftInputMode="adjustPan|stateHidden" -->
+        <activity
+            android:name=".ui.BClientPublishChalegeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            tools:replace="android:configChanges" />
+        <activity
+            android:name=".ui.BClientChoiceProjectActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            tools:replace="android:configChanges" />
+        <activity
+            android:name=".ui.BClientClubChoiceActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            tools:replace="android:configChanges" />
+        <activity
+            android:name=".ui.BClientClubChalageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            tools:replace="android:configChanges" />
+        <activity
+            android:name=".ui.ActionCateoryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            tools:replace="android:configChanges" />
+        <activity
+            android:name=".ui.BClientActionTimeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            tools:replace="android:configChanges" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true" />
+        <activity android:name=".ui.ActionItemActivity" /> <!-- <activity -->
+        <!-- android:name="com.dmeyc.dmestore.ui.ActionItemActivity" -->
+        <!-- android:configChanges="keyboardHidden|orientation|screenSize" -->
+        <!-- android:exported="true" -->
+        <!-- android:theme="@android:style/Theme.Translucent.NoTitleBar" /> -->
+        <activity android:name=".ui.SorcerInActivity" />
+        <activity android:name=".ui.CommActionRecord" />
+        <activity android:name=".ui.OrderSuccessActivity" />
+        <activity android:name=".ui.ShowPicActivity" />
+        <activity android:name=".ui.SideTailorActivity" />
+        <activity android:name=".ui.ProductSelectSizeActivity" />
+        <activity android:name=".ui.SelectPhotoActivity" />
+        <activity android:name=".ui.tailor.DetailTailorActicity" />
+        <activity
+            android:name=".ui.look.ReleaseActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.look.FindDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.order.LogisticsActivity_2"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.look.PictureEditorActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.NoNetWorkActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- <activity android:name="com.zzti.fengyongge.imagepicker.PhotoSelectorActivity"></activity>//选择图片 -->
+        <!-- <activity android:name="com.zzti.fengyongge.imagepicker.PhotoPreviewActivity"></activity>//预览图片 -->
+        <activity
+            android:name="com.lzy.imagepicker.ui.ImagePreviewDelActivity"
+            android:theme="@style/ImagePickerThemeFullScreen" />
+        <activity android:name=".ui.CategoryListActivity" /> <!-- 聚合会话列表 -->
+        <activity
+            android:name=".ui.chat.SubConversationListActivtiy"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.dmeyc.dmestoreyfm"
+                    android:pathPrefix="/subconversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity> <!-- 会话列表 -->
+        <activity
+            android:name=".ui.chat.ConversationListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.VIEW" />-->
+
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+
+                <!--<data-->
+                    <!--android:host="com.dmeyc.dmestoreyfm"-->
+                    <!--android:pathPrefix="/conversationlist"-->
+                    <!--android:scheme="rong" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name="com.dmeyc.dmestoreyfm.newui.home.message.MessageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.dmeyc.dmestoreyfm"
+                    android:pathPrefix="/conversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".receiver.DemoNotificationReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED" />
+                <action android:name="io.rong.push.intent.THIRD_PARTY_PUSH_STATE" />
+            </intent-filter>
+        </receiver> <!-- <activity android:name=".ui.MyCreatCommListActivity" /> -->
+        <!-- <activity android:name=".ui.BClientPromotionActivity" /> -->
+        <!-- <activity android:name=".ui.EducationBackActivity" /> -->
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="101042597" /> <!-- BridgeActivity定义了HMS-SDK中一些跳转所需要的透明页面 -->
+        <activity
+            android:name="com.huawei.hms.activity.BridgeActivity"
+            android:configChanges="orientation|locale|screenSize|layoutDirection|fontScale"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Translucent">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+        <activity android:name=".newui.menu.apply.ApplyForActivity" />
+        <activity android:name=".newui.menu.apply.group.ApplyGroupActivity" />
+        <activity android:name=".newui.menu.setting.privacy.PrivacyActivity" />
+        <activity android:name=".newui.menu.setting.SettingActivity" />
+        <activity android:name=".newui.menu.setting.accountsave.AccountSaveActivity" />
+        <activity android:name=".newui.menu.setting.about.AboutActivity" />
+        <activity android:name=".newui.menu.setting.about.report.ReportActivity" />
+        <activity android:name=".newui.menu.setting.bindphone.BindPhoneActivity" />
+        <activity android:name=".newui.menu.setting.authentication.AuthenticationActivity" />
+        <activity android:name=".newui.menu.wallet.WalletActivity" />
+        <activity android:name=".newui.menu.wallet.bankcard.BankCardActivity" />
+        <activity android:name=".newui.menu.wallet.addbankcard.AddBankCardActivity" />
+        <activity android:name=".newui.menu.policy.MyPolicyActivity" />
+        <activity android:name=".newui.menu.club.MyClubActivity" />
+        <activity android:name=".newui.menu.club.clubdetail.MyClubDetailActivity" />
+        <activity android:name=".newui.menu.club.qrcode.ClubQrCodeActivity" />
+        <activity android:name=".newui.menu.club.notice.NoticeActivity" />
+        <activity android:name=".newui.menu.apply.merchant.ApplyMerchantActivity" />
+        <activity android:name=".newui.menu.apply.coach.ApplyCoachActivity" />
+        <activity android:name=".newui.menu.apply.anchor.ApplyAnchorActivity" />
+        <activity android:name=".newui.release.video.ReleaseVideoActivity" />
+        <activity android:name=".newui.release.relation.RelationActivity" />
+        <activity android:name=".newui.release.friend.AtFriendActivity" />
+        <activity android:name=".newui.release.action.ReleaseActionActivity" />
+        <activity android:name=".newui.release.match.ReleaseMatchActivity" />
+        <activity android:name=".newui.release.goods.ReleaseGoodsActivity" />
+        <activity android:name=".newui.release.course.ReleaseCourseActivity" />
+        <activity android:name=".newui.home.groupaction.actiondetail.ActionDetailActivity" />
+        <activity android:name=".newui.home.groupaction.actionpay.ActionPayActivity" />
+        <activity android:name=".newui.home.groupaction.matchdetail.MatchDetailActivity" />
+        <activity android:name=".newui.home.search.SearchHistoryActivity" />
+        <!--<activity android:name=".newui.home.message.MessageActivity" />-->
+        <activity android:name=".newui.menu.action.ActionReleaseActivity" />
+        <activity android:name=".newui.home.search.searchdetail.SearchDetailActivity" />
+        <activity android:name=".newui.login.LoginActivity" />
+        <activity android:name=".newui.login.bindthirdpart.BindThirdPartActivity" />
+        <activity android:name=".newui.menu.goods.MyCourseAndGoodsActivity" />
+        <activity android:name=".newui.pagerdetail.other.OtherDetailActivity" />
+        <activity android:name=".newui.home.video.VideoDetailActivity" />
+        <activity android:name=".newui.pagerdetail.editinfo.EditInfoActivity" />
+        <activity android:name=".newui.pagerdetail.editinfo.EditInfoDetailActivity" />
+        <activity android:name=".newui.common.container.ContainerActivity" />
+        <activity android:name=".newui.common.ScanActivity" />
+        <activity android:name=".newui.release.selectanchor.SearchAnchorActivity" />
+        <activity android:name=".newui.release.live.LiveActivity" />
+        <activity android:name=".photolive.LivingActivity" />
+        <activity android:name=".newui.home.groupaction.joinmember.JoinMemberActivity" />
+        <activity android:name=".newui.home.living.LivingListActivity" />
+        <activity android:name=".newui.home.living.lookanchor.LookAnchorActivity" />
+        <activity android:name=".newui.home.living.largerimage.LookLargerImageActivity" />
+        <activity android:name=".newui.home.goodsdetail.GoodsDetailActivity" />
+        <activity android:name=".newui.home.goodsdetail.CourseDetailActivity" />
+        <!-- 解决华为移动服务升级问题的透明界面（必须声明） -->
+        <!-- <activity -->
+        <!-- android:name="com.huawei.android.hms.agent.common.HMSAgentActivity" -->
+        <!-- android:configChanges="orientation|locale|screenSize|layoutDirection|fontScale" -->
+        <!-- android:excludeFromRecents="true" -->
+        <!-- android:exported="false" -->
+        <!-- android:hardwareAccelerated="true" -->
+        <!-- android:theme="@android:style/Theme.Translucent" > -->
+        <!-- <meta-data -->
+        <!-- android:name="hwc-theme" -->
+        <!-- android:value="androidhwext:style/Theme.Emui.Translucent" /> -->
+        <!-- </activity> -->
+        <provider
+            android:name="com.huawei.hms.update.provider.UpdateProvider"
+            android:authorities="com.dmeyc.dmestoreyfm.hms.update.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" /> <!-- 第三方相关 :接收Push消息（注册、Push消息、Push连接状态）广播 -->
+        <receiver android:name="io.rong.push.platform.hms.HMSReceiver">
+            <intent-filter>
+
+                <!-- 必须,用于接收token -->
+                <action android:name="com.huawei.android.push.intent.REGISTRATION" />
+                <!-- 必须，用于接收消息 -->
+                <action android:name="com.huawei.android.push.intent.RECEIVE" />
+                <!-- 可选，用于点击通知栏或通知栏上的按钮后触发onEvent回调 -->
+                <action android:name="com.huawei.android.push.intent.CLICK" />
+                <!-- 可选，查看push通道是否连接，不查看则不需要 -->
+                <action android:name="com.huawei.intent.action.PUSH_STATE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.huawei.hms.support.api.push.PushEventReceiver">
+            <intent-filter>
+
+                <!-- 接收通道发来的通知栏消息，兼容老版本Push -->
+                <action android:name="com.huawei.intent.action.PUSH" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

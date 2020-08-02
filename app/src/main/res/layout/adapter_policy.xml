@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dimen_10">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:background="@color/background_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_21"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_icon"
+        app:layout_constraintEnd_toEndOf="@+id/iv_icon"
+        app:layout_constraintStart_toStartOf="@+id/iv_icon"
+        app:layout_constraintTop_toTopOf="@+id/iv_icon"
+        tools:text="保障中" />
+
+    <TextView
+
+        android:id="@+id/tv_policy_name"
+        style="@style/text_17_black"
+        android:layout_marginTop="@dimen/dimen_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="好兔群主责任险" />
+
+    <TextView
+        style="@style/text_14_9D9D9D"
+        android:layout_marginTop="@dimen/dimen_15.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="期限：2019年12月1日 09:00-18:00" />
+
+    <TextView
+        android:id="@+id/tv_from_group"
+        style="@style/text_14_9D9D9D"
+        android:layout_marginBottom="@dimen/dimen_14.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:text="来自xxxxx群" />
+
+    <TextView
+        android:id="@+id/tv_logo"
+        style="@style/text_14_9D9D9D"
+        android:layout_marginRight="@dimen/dimen_17"
+        app:layout_constraintBottom_toBottomOf="@id/tv_from_group"
+        app:layout_constraintRight_toLeftOf="@id/iv_icon"
+        app:layout_constraintTop_toTopOf="@id/tv_from_group"
+        tools:text="保险公司logo" />
+</android.support.constraint.ConstraintLayout>

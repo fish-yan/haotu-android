@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/tv_common_title"
+        android:text="热门搜索"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"/>
+    <com.dmeyc.dmestoreyfm.wedgit.flowview.AutoFlowLayout
+        android:id="@+id/hotFlowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_history_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+            <TextView style="@style/tv_common_title"
+                android:text="搜索历史"
+                android:textSize="20sp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                android:id="@+id/textView2" />
+            <ImageView
+                android:id="@+id/iv_search_delete"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="16.5dp"
+                android:src="@drawable/seek_ic_delete"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <com.dmeyc.dmestoreyfm.wedgit.flowview.AutoFlowLayout
+            android:id="@+id/historyFlowLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+</LinearLayout>

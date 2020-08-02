@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="22dp">
+    <TextView
+        android:id="@+id/item_tv_flowlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/gray"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:singleLine="true"
+        android:maxLength="16"
+        android:background="@drawable/shap_orang_ciclercolor"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"/>
+</FrameLayout>

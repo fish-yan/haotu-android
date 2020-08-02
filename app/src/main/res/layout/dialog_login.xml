@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ver="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="295dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_login_bg">
+
+    <RelativeLayout
+        android:layout_width="295dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:text="登录"
+            android:textColor="@color/color_1a1a1a"
+            android:layout_marginTop="10.5dp"
+            android:textSize="16sp"/>
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="38dp"
+            android:layout_height="33dp"
+            android:paddingLeft="13dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/logon_ic_return"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/iv_cancle"
+            android:layout_width="38dp"
+            android:layout_height="33dp"
+            android:paddingRight="13dp"
+            android:paddingTop="8dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logon_ic_cancel"/>
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:id="@+id/ll_root1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.dmeyc.dmestoreyfm.wedgit.DeleteEditttext
+                android:id="@+id/deleteEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"/>
+            <View style="@style/divide_line"/>
+            <TextView
+                android:id="@+id/tv_next_step"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/color_c5c5c5"
+                android:textSize="16sp"
+                android:text="下一步"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:clickable="false"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/tv_other_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微信及其他登录方式"
+                android:drawableRight="@drawable/ic_triangle_black"
+                android:textSize="11.3sp"
+                android:textColor="@color/color_666666"
+                android:drawablePadding="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="22dp"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_root2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp">
+                <TextView
+                    android:id="@+id/tv_default_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_c5c5c5"
+                    tools:text="186 5538 8161" />
+                <com.dmeyc.dmestoreyfm.wedgit.TimerTaskTextView
+                    android:id="@+id/timertasktextview"
+                    android:layout_width="60dp"
+                    android:layout_height="25dp"
+                    android:textColor="@color/color_c5c5c5"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_input_code_normal"/>
+            </LinearLayout>
+            <com.dmeyc.dmestoreyfm.wedgit.VerificationCodeInput
+                android:id="@+id/codeinput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ver:box="6"
+                android:layout_centerInParent="true"
+                ver:child_width = "36dp"
+                ver:child_height = "36dp"
+                ver:child_h_padding = "6dp"
+                ver:inputType="number"
+                android:layout_gravity="center_horizontal"
+                ver:box_bg_focus = "@drawable/shape_input_code_focus"
+                ver:box_bg_normal = "@drawable/shape_input_code_normal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

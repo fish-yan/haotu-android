@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.dmeyc.dmestoreyfm.wedgit.CircleImageView
+        android:id="@+id/iv_comment_icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_parent_name"
+        style="@style/text_15_black"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/color_9A6500"
+        app:layout_constraintLeft_toRightOf="@id/iv_comment_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="兔儿子" />
+
+    <TextView
+        android:id="@+id/tv_comment_content"
+        style="@style/text_14_9D9D9D"
+        android:layout_width="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/color_4B4B4B"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_parent_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_parent_name"
+        tools:text="真好看啊，我可以报名吗？" />
+
+    <TextView
+        android:id="@+id/tv_time_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1.5dp"
+        android:textColor="@color/color_CECECE"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_comment_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_comment_content"
+        tools:text="今天 22:40" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_comment_child"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_parent_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time_bottom" />
+
+    <LinearLayout
+        android:id="@+id/ll_look_more"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/tv_parent_name"
+        app:layout_constraintTop_toBottomOf="@+id/rv_comment_child"
+        android:layout_height="wrap_content">
+        <View android:layout_width="18.5dp"
+            android:background="@color/color_9D9D9D"
+            android:layout_height="1dp"/>
+        <TextView
+            android:id="@+id/tv_look_more"
+            style="@style/text_14_9D9D9D"
+            android:textSize="12sp"
+            android:layout_marginLeft="8.5dp"
+            tools:text="展开18条回复" />
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/icon_arrow_down"
+            android:layout_width="10dp"
+            android:layout_height="5dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

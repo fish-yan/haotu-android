@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical">
+        <!--?attr/actionBarSize-->
+        <ImageView
+            android:id="@+id/iv_left_title_bar"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="19dp"
+            android:src="@drawable/ic_return_black" />
+        <TextView
+            android:id="@+id/tv_left_title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="16sp" />
+        <TextView
+            android:text="开始设计"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_1a1a1a"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tv_right_title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/indicator_selected_color"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/iv_right_title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp" />
+        <View
+            android:id="@+id/v_divide"
+            style="@style/divide_line"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_below="@+id/rl_titlebar"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlPrimaryColor="#afff"
+        app:srlAccentColor="@color/color_1a1a1a"
+        app:srlEnableLoadmore="true"
+        app:srlEnableHeaderTranslationContent="true"
+        >
+        <com.scwang.smartrefresh.header.StoreHouseHeader
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:shhText="dmeycstore"
+            app:shhLineWidth="2dp"/>
+        <LinearLayout
+            android:layout_marginTop="-30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <!--<android.support.v4.widget.NestedScrollView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:scrollbars="none">-->
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:descendantFocusability="blocksDescendants">-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"/>
+                <!--</RelativeLayout>-->
+            <!--</android.support.v4.widget.NestedScrollView>-->
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="合计: 1800元"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:textSize="16sp"
+            android:textColor="@color/indicator_selected_color" />
+
+        <TextView
+            android:id="@+id/tv_add_car"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:text="加入购物车"
+            android:layout_marginRight="32dp"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:background="@drawable/shape_1radius_99_stroke"/>
+
+        <TextView
+            android:id="@+id/tv_buy"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:text="立刻定制"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_1radius_fd7e18"/>
+    </LinearLayout>
+
+</RelativeLayout>

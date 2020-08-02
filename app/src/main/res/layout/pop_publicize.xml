@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/ll_pop"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ListView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:id="@+id/data_list" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+android:text="一般海报尺寸：42cm×57cm"
+       />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/gb"
+    />
+    <TextView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="易拉宝尺寸：80cm×200cm"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gb"
+        />
+    <TextView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="X展架尺寸：42cm×57cm"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gb"
+        />
+    <!--android:dividerHeight="3dp"-->
+    <!--android:divider="@drawable/divider_transparent"-->
+    <!--<com.dmeyc.dmestoreyfm.wedgit.flowview.AutoFlowLayout-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:id="@+id/hotFlowLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:verticalSpace="@dimen/dimen_10"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp" />-->
+    <!--<Button-->
+        <!--android:layout_marginTop="200dp"-->
+        <!--android:layout_marginBottom="50dp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:id="@+id/btn_login"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:text="确定"-->
+        <!--android:background="@drawable/shape_tailor_sure"-->
+        <!--android:layout_marginRight="@dimen/dimen_50"-->
+        <!--android:layout_marginLeft="@dimen/dimen_50"/>-->
+</LinearLayout>

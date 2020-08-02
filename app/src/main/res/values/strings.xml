@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">好兔</string>
+    <string name="home">群活动</string>
+    <string name="shoping_gary">群PK</string>
+    <string name="mine_bottm">我的</string>
+    <string name="comm_chat">群聊</string>
+
+    <string name="tailor">量身</string>
+    <string name="brand">品牌</string>
+    <string name="mine">我的</string>
+    <string name="album_all">All Photos</string>
+
+    <string name="select_city">选择城市</string>
+    <string name="hot_city">热门城市</string>
+    <string name="located_city">定位城市</string>
+    <string name="hint_search_box">请输入城市名或拼音</string>
+    <string name="nothing_found">没有搜索结果~</string>
+    <string name="locating">正在定位…</string>
+    <string name="located_failed">定位失败</string>
+
+    <string name="internet_error">网络异常,请检查网络设置</string>
+    <string name="my_order">我的订单</string>
+    <string name="my_sever">我的服务</string>
+    <string name="watch_my_order">查看全部订单</string>
+    <string name="info_pay_for">待付款</string>
+    <string name="info_my_tailor">我的定制</string>
+    <string name="setting">设置</string>
+    <string name="address_manager">地址管理</string>
+    <string name="home_search_hint">请输入昵称进行搜索</string>
+    <string name="edit">编辑</string>
+    <string name="info_wait_send">待发货</string>
+    <string name="info_wait_recieve">待收货</string>
+    <string name="info_wait_evaluate">待晒单</string>
+    <string name="info_after_sale">退货/售后</string>
+    <string name="search">搜索</string>
+    <string name="hot_search">热门搜索</string>
+    <string name="history_search">历史搜索</string>
+    <string name="feed_back">意见反馈</string>
+    <string name="share_app">分享APP</string>
+    <string name="about_us">关于我们</string>
+    <string name="check_version">版本检查</string>
+    <string name="login_regist">登录 | 注册</string>
+    <string name="ke_fu">客服</string>
+    <string name="add_shop">加入购物车</string>
+    <string name="buy_rightnow">立即购买</string>
+    <string name="share">分享</string>
+    <string name="dme_tailor">点米量身</string>
+    <string name="log_out">退出登录</string>
+    <string name="clear_cash">清理缓存</string>
+    <string name="custom_service">客服</string>
+    <string name="yuan">¥</string>
+    <string name="cloth">约客</string>
+    <string name="system_info">系统通知</string>
+    <string name="activity_info">活动通知</string>
+
+    <string-array name="reason_order_back">
+        <item>我不想买了</item>
+        <item>其他渠道价格更低</item>
+        <item>重复下单/误下单</item>
+        <item>其他原因"</item>
+    </string-array>
+
+    <string-array name="logistic_name">
+        <item>中通快递</item>
+        <item>申通快递</item>
+        <item>圆通快递</item>
+        <item>韵达快递</item>
+        <item>国通快递</item>
+        <item>EMS</item>
+        <item>顺丰速运</item>
+        <item>百世汇通</item>
+        <item>全峰快递</item>
+        <item>宅急送</item>
+        <item>天天快递</item>
+        <item>其他快递</item>
+    </string-array>
+    <string name="activity_photoverified_positive_hint">请确保证件边框完整，证件上信息清晰可见</string>
+    <string name="activity_search_city_result_cancel">去相册</string>
+    <string name="activity_photoverified_positive">去拍摄</string>
+    <string name="activity_photoverified_title">拍摄示范</string>
+    <string name="_321">321人</string>
+
+    <string name="tm_login_count_down_format">%1$d秒后重试</string>
+</resources>

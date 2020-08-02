@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<com.dl7.player.media.IjkPlayerView-->
+        <!--android:id="@+id/player_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/iv_gif"
+        android:scaleType="fitXY"
+        />
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_caculatertext"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:text="欢迎来到算一算\n现在开始计算您的活动费用吧"
+        />
+    <Button
+        android:layout_below="@+id/tv_caculatertext"
+        android:id="@+id/btn_upload"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/white"
+        android:text="好的，开始"
+        android:background="@drawable/shape_tailor_sure"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="@dimen/dimen_30"
+        android:layout_marginLeft="@dimen/dimen_30"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title_bar"/>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="10dp"
+               android:padding="10dp"
+               android:background="@color/white">
+               <ImageView
+                   android:id="@+id/iv_avatar"
+                   android:layout_width="100dp"
+                   android:layout_height="130dp"
+                   android:scaleType="centerCrop"
+                   android:layout_marginTop="10dp"/>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginTop="5dp">
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textSize="16sp"
+                       android:textColor="@color/color_333333"
+                       android:text="设计师简介:" />
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="      新式轻礼服”创导者。擅长将典雅的东方气质与利落的西式剪裁相融和，强调女性精致、优雅的特质；提倡一衣多变及无季节性的穿搭理念，力求在设计感与实穿性上找到最佳契合点。"
+                       android:layout_marginTop="8dp"/>
+               </LinearLayout>
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="50dp"
+               android:background="@color/white">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="45dp"
+                   android:gravity="center_vertical"
+                   android:layout_marginLeft="10dp"
+                   android:text="设计师作品展示"
+                   android:textSize="16sp"
+                   android:textColor="@color/color_333333" />
+           </LinearLayout>
+       </LinearLayout>
+   </ScrollView>
+</LinearLayout>

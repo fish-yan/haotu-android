@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.dmeyc.dmestoreyfm.ui.ShopCarActivity">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycleview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <View style="@style/bottom_shadow"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <CheckBox
+                    android:id="@+id/cb_all"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:button="@drawable/checkbox"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/color_1a1a1a"
+                    android:text="全选"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/color_1a1a1a"
+                        android:text="合计 :  "
+                        android:gravity="right"/>
+                    <com.dmeyc.dmestoreyfm.wedgit.PriceView
+                        android:id="@+id/tv_total_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        app:price_textsize="15sp"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_pay"
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:text="去结算"
+                    android:gravity="center"
+                    android:background="@color/indicator_selected_color"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="196dp"
+                android:layout_height="115.5dp"
+                android:src="@drawable/shopping_ic_shopping"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购物车是空的,去逛逛吧~"
+                android:layout_marginTop="33dp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <View style="@style/head_shadow" />
+    </RelativeLayout>
+</LinearLayout>

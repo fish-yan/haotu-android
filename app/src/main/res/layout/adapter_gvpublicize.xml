@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/gv_item"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/indicator_selected_color"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/shap_rech"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:text="—"
+            android:textSize="18dp"
+            android:textColor="@color/home_lab"
+            />
+        <View
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="match_parent"
+            android:background="@color/gb"
+            />
+        <EditText
+            android:id="@+id/et_number"
+            android:inputType="number"
+            android:background="@null"
+            android:gravity="center"
+            android:maxLength="2"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="0"
+            />
+        <View
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="match_parent"
+            android:background="@color/gb"
+            />
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:text="+"
+            android:textColor="@color/home_lab"
+            android:textSize="18dp"
+            />
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:background="@drawable/shap_shopwhit"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--&gt;-->
+<!--<TextView-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:text="—"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:gravity="center"-->
+    <!--android:textColor="@color/home_lab"-->
+    <!--/>-->
+
+    <!--</LinearLayout>-->
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+                android:id="@+id/civ_group_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:civ_left_hint_str="请给你的俱乐部取个名字吧"
+                app:civ_type="2" />
+
+            <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+                android:id="@+id/civ_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:civ_left_hint_str="请填写联系人姓名"
+                app:civ_type="2" />
+
+            <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+                android:id="@+id/civ_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:civ_left_hint_str="请填写联系号码"
+                app:civ_type="2" />
+
+            <EditText
+                android:id="@+id/et_instruction"
+                style="@style/text_17_black"
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:background="@color/white"
+                android:gravity="top"
+                android:hint="请填写介绍"
+                android:paddingLeft="22.5dp"
+                android:paddingTop="23dp"
+                android:paddingRight="22.5dp"
+                android:paddingBottom="23dp"
+                android:textColorHint="@color/color_9D9D9D" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_logo"
+                    android:layout_width="104dp"
+                    android:layout_height="104dp"
+                    android:layout_marginTop="58.5dp"
+                    android:src="@drawable/icon_add_picture" />
+
+                <TextView
+                    style="@style/text_17_black"
+                    android:layout_marginTop="15.5dp"
+                    android:text="请上传俱乐部logo 尺寸208*208"
+                    android:textColor="@color/color_9D9D9D" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

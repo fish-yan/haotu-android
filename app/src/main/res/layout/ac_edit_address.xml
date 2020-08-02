@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.dmeyc.dmestoreyfm.ui.EditAddressActivity">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_head_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="编辑收货地址"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="35dp"
+                android:textSize="25sp"
+                android:textColor="@color/color_1a1a1a"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_1a1a1a"
+                    android:layout_centerVertical="true"
+                    android:text="收货人"/>
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/color_1a1a1a"
+                    android:paddingRight="30dp"
+                    android:hint="请填写"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/gray"
+                    android:background="@null"/>
+            </RelativeLayout>
+            <View style="@style/divide_line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_1a1a1a"
+                    android:layout_centerVertical="true"
+                    android:text="手机号码"/>
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/color_1a1a1a"
+                    android:paddingRight="30dp"
+                    android:hint="请填写"
+                    android:textSize="14sp"
+                    android:inputType="phone|number"
+                    android:maxLength="11"
+                    android:textColorHint="@color/gray"
+                    android:background="@null"/>
+            </RelativeLayout>
+            <View style="@style/divide_line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_1a1a1a"
+                    android:layout_centerVertical="true"
+                    android:text="所在地区"/>
+                <TextView
+                    android:id="@+id/tv_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/color_1a1a1a"
+                    android:paddingRight="30dp"
+                    android:hint="请填写"
+                    android:textColorHint="@color/gray"/>
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_back_gray"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dp"/>
+            </RelativeLayout>
+            <View style="@style/divide_line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_1a1a1a"
+                    android:layout_centerVertical="true"
+                    android:text="详情地址"/>
+                <EditText
+                    android:id="@+id/et_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/color_1a1a1a"
+                    android:paddingRight="30dp"
+                    android:hint="请填写"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/gray"
+                    android:background="@null"/>
+            </RelativeLayout>
+            <View style="@style/divide_line"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_make_sure"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="35dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="确认修改"
+            android:background="@color/indicator_selected_color"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.dmeyc.dmestoreyfm.ui.LogisticsActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View style="@style/head_shadow" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:gravity="center_vertical">
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/logistics_img"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="优裁科技"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/color_1a1a1a" />
+                    </LinearLayout>
+                    <View style="@style/divide_line"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/color_1a1a1a"
+                        android:textSize="12sp"
+                        android:text="订单编号: v1234567890"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/color_1a1a1a"
+                        android:textSize="12sp"
+                        android:text="收件地址: 闵行区科技绿洲三期"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/color_1a1a1a"
+                        android:textSize="12sp"
+                        android:text="收件人: 小红Emily 18312345678"
+                        android:layout_marginBottom="20dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#f7f6f7"/>
+                <com.dmeyc.dmestoreyfm.wedgit.logistics.NodeProgressView
+
+                    android:id="@+id/npv_NodeProgressView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:width="2dp"
+                    app:nodeRadius="5dp"
+                    android:layout_margin="20dp"/>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </FrameLayout>
+</LinearLayout>

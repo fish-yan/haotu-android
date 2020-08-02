@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_root3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/color_1a1a1a"
+            android:text="商品信息"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="20dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价位"
+                android:textColor="@color/color_1a1a1a"
+                android:id="@+id/textView3" />
+            <TextView
+                android:id="@+id/tv_introduction_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="499"
+                android:textColor="@color/color_1a1a1a"
+                android:layout_alignBaseline="@+id/textView3"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View style="@style/divide_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="品牌/设计师"
+                android:textColor="@color/color_1a1a1a"/>
+            <TextView
+                android:id="@+id/tv_introduction_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Gucci"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/color_1a1a1a"/>
+        </RelativeLayout>
+        <View style="@style/divide_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="品类"
+                android:textColor="@color/color_1a1a1a"/>
+            <TextView
+                android:id="@+id/tv_introduction_kind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="外套/毛衣"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/color_1a1a1a"/>
+        </RelativeLayout>
+        <View style="@style/divide_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="材质详情"
+                android:textColor="@color/color_1a1a1a"/>
+            <TextView
+                android:id="@+id/tv_introduction_material"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="面料:丝绒"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/color_1a1a1a"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View style="@style/divide_block"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="35dp">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_introduction_avatar"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            app:riv_corner_radius="31dp"
+            android:src="@drawable/favicon"/>
+        <TextView
+            android:id="@+id/tv_introduction_brandName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/color_1a1a1a"
+            tools:text="jockie"
+            android:layout_marginLeft="17dp"/>
+        <TextView
+            android:id="@+id/tv_introduction_follow"
+            android:layout_width="82dp"
+            android:layout_height="27dp"
+            android:text="关注店铺"
+            android:textSize="13sp"
+            android:textColor="@color/indicator_selected_color"
+            android:gravity="center"
+            android:background="@drawable/shape_14radius_fd7e18"/>
+    </LinearLayout>
+    <View style="@style/divide_block"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="商品详情"
+            android:textColor="@color/color_1a1a1a"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="20dp"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/introductionRecycleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"/>
+    </LinearLayout>
+    <View style="@style/divide_block"/>
+</LinearLayout>

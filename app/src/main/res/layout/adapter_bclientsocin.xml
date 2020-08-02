@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_marginTop="@dimen/dimen_10"
+    android:layout_marginLeft="@dimen/dimen_10"
+    android:layout_marginRight="@dimen/dimen_10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_5"
+        android:background="@color/gb"
+        />
+    <LinearLayout
+        android:background="@drawable/shap_white_littleconner"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+            <LinearLayout
+                android:layout_marginRight="@dimen/dimen_5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <com.dmeyc.dmestoreyfm.wedgit.CircleImageView
+                    android:id="@+id/cv_actionone"
+                    android:layout_width="@dimen/dimen_35"
+                    android:layout_height="@dimen/dimen_35"
+                    android:layout_gravity="center"
+                    android:background="@drawable/me_ic_head" />
+                <TextView
+                    android:singleLine="true"
+                    android:maxLength="4"
+                    android:ellipsize="end"
+                    android:id="@+id/action_onename"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="好图"
+                    android:textSize="@dimen/dimen_12"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginRight="@dimen/dimen_5"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <com.dmeyc.dmestoreyfm.wedgit.CircleImageView
+                    android:id="@+id/cv_actiontwo"
+                    android:layout_width="@dimen/dimen_35"
+                    android:layout_height="@dimen/dimen_35"
+                    android:background="@drawable/me_ic_head"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:singleLine="true"
+                    android:maxLength="4"
+                    android:ellipsize="end"
+                    android:id="@+id/action_twoname"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="好图"
+                    android:textSize="@dimen/dimen_12"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+<LinearLayout
+    android:id="@+id/ll_sockclick"
+    android:paddingLeft="@dimen/dimen_10"
+    android:paddingRight="@dimen/dimen_10"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/dimen_15"
+    >
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_teamsocke"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="@dimen/dimen_50"
+            android:text="0"
+            android:textStyle="bold"
+            android:textSize="@dimen/dimen_24"
+            android:textColor="#8A8A8A"
+            android:background="@null"
+            />
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tv_teambsocker"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="@dimen/dimen_50"
+            android:text="0"
+            android:textSize="@dimen/dimen_24"
+            android:textColor="#8A8A8A"
+            android:background="@null"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <TextView
+        android:textSize="@dimen/dimen_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="男女单打第二轮"
+        />
+ </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+                <LinearLayout
+                    android:layout_marginRight="@dimen/dimen_5"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <com.dmeyc.dmestoreyfm.wedgit.CircleImageView
+                           android:id="@+id/cv_actionthree"
+                        android:layout_width="@dimen/dimen_35"
+                        android:layout_height="@dimen/dimen_35"
+                        android:layout_gravity="center"
+                        android:background="@drawable/me_ic_head" />
+                    <TextView
+                        android:id="@+id/tv_actonthreename"
+                        android:singleLine="true"
+                        android:maxLength="4"
+                        android:ellipsize="end"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="好图"
+                        android:textSize="@dimen/dimen_12"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginRight="@dimen/dimen_5"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+                    <com.dmeyc.dmestoreyfm.wedgit.CircleImageView
+                        android:id="@+id/cv_actionfour"
+                        android:layout_width="@dimen/dimen_35"
+                        android:layout_height="@dimen/dimen_35"
+                        android:background="@drawable/me_ic_head"
+                        android:layout_gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/tv_action_fourname"
+                        android:singleLine="true"
+                        android:maxLength="4"
+                        android:ellipsize="end"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="好图"
+                        android:textSize="@dimen/dimen_12"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_below="@+id/ll_top"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/dimen_80"-->
+            <!--android:orientation="horizontal"-->
+            <!--&gt;-->
+
+            <!--<com.dmeyc.dmestoreyfm.wedgit.CircleImageView-->
+                <!--android:layout_marginLeft="@dimen/dimen_10"-->
+                <!--android:id="@+id/iv_teamone"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_width="49dp"-->
+                <!--android:layout_height="49dp"-->
+                <!--android:background="@drawable/me_ic_head"-->
+                <!--/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_date"-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_marginLeft="@dimen/dimen_10"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textSize="@dimen/dimen_18"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:text="5月29日"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:layout_marginRight="@dimen/dimen_2"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:id="@+id/tv_teampower"-->
+                <!--android:textSize="@dimen/dimen_14"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:text="500"-->
+                <!--android:textColor="#FF5151"-->
+                <!--/>-->
+            <!--<ImageView-->
+                <!--android:layout_marginRight="@dimen/dimen_10"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_width="12dp"-->
+                <!--android:layout_height="12dp"-->
+                <!--android:background="@drawable/pk_filre"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/gb"-->
+            <!--/>-->
+        <!--<LinearLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_below="@+id/ll_top"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--&gt;-->
+            <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginRight="10dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginLeft="20dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:orientation="vertical"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;&gt;&ndash;&gt;-->
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/tv_ranknum"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textSize="@dimen/dimen_60"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textColor="@color/home_lab"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:text="1"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginBottom="@dimen/dimen_5"&ndash;&gt;-->
+                    <!--&lt;!&ndash;/>&ndash;&gt;-->
+            <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+            <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                <!--&lt;!&ndash;android:weightSum="3"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:orientation="vertical"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;&gt;&ndash;&gt;-->
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/tv_won_rank"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_weight="2"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textSize="@dimen/dimen_14"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textColor="#FF5151"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_gravity="bottom"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:gravity="bottom"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:text="胜率： 100%"&ndash;&gt;-->
+                    <!--&lt;!&ndash;/>&ndash;&gt;-->
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/tv_des"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textSize="@dimen/dimen_14"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textColor="#B1B1B1"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_gravity="center_vertical"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:text="已经连续三周参与pk赛挑战，获得很不错的成绩"&ndash;&gt;-->
+                    <!--&lt;!&ndash;/>&ndash;&gt;-->
+            <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+        <!--</LinearLayout>-->
+
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_radius_bg">
+
+    <TextView
+        android:id="@+id/tv_match_name"
+        style="@style/text_17_black"
+        android:layout_marginLeft="11.5dp"
+        android:layout_marginTop="@dimen/dimen_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="2019年卡莱特女双霸王花比赛松江站" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/color_FA375C"
+        android:paddingLeft="@dimen/dimen_7"
+        android:paddingRight="6dp"
+        android:text="赛事"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_match_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_match_name" />
+
+    <com.dmeyc.dmestoreyfm.wedgit.CircleImageView
+        android:id="@+id/civ_icon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="11.5dp"
+        android:layout_marginTop="10.5dp"
+        app:layout_constraintBottom_toTopOf="@+id/headerIconView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tip"
+        app:layout_goneMarginBottom="@dimen/dimen_20" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/text_14_9D9D9D"
+        android:layout_marginLeft="7.5dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintLeft_toRightOf="@id/civ_icon"
+        app:layout_constraintTop_toTopOf="@id/civ_icon"
+        tools:text="时间:2019年12月1日" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        style="@style/text_14_9D9D9D"
+        android:layout_marginLeft="7.5dp"
+        android:layout_marginBottom="4.5dp"
+        app:layout_constraintBottom_toBottomOf="@id/civ_icon"
+        app:layout_constraintLeft_toRightOf="@id/civ_icon"
+        tools:text="地点:上海博宽羽毛球馆（浦东）" />
+
+    <TextView
+        android:id="@+id/tv_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="11.5dp"
+        android:textColor="@color/color_FF5F5F"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_address"
+        tools:text="2.9KM" />
+
+    <ImageView
+        android:id="@+id/iv_state"
+        android:layout_width="36.5dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="26.5dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/icon_activity_over"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/tv_distance"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:visibility="visible" />
+
+    <com.dmeyc.dmestoreyfm.wedgit.HeaderIconView
+        android:id="@+id/headerIconView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.5dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/tv_match_name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/civ_icon" />
+
+</android.support.constraint.ConstraintLayout>

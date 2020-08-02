@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/color_bg"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/layout_title"/>
+
+    <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+        android:layout_marginTop="5dp"
+        android:id="@+id/civ_grouper"
+        app:civ_left_str = "成为俱乐部群主"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+        android:id="@+id/civ_merchant"
+        app:civ_left_str = "成为商家"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+        android:id="@+id/civ_coach"
+        app:civ_left_str = "成为教练"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+        android:id="@+id/civ_anchor"
+        app:civ_left_str = "成为主播"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

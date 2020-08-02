@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:layout_gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--android:background="@drawable/shap_shopwhit"-->
+<!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:background="@drawable/shap_shopwhit"-->
+    <!--&gt;-->
+    <LinearLayout
+        android:id="@+id/ll_tit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:background="@drawable/dialog_comm"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="评价    "
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gb" />
+    </LinearLayout>
+<ScrollView
+    android:background="@color/white"
+    android:layout_above="@+id/ll_botm"
+    android:layout_below="@+id/ll_tit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <com.dmeyc.dmestoreyfm.wedgit.XLHRatingBar
+        xmlns:lxhRatingBar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ratingBar"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        lxhRatingBar:canEdit="true"
+        lxhRatingBar:differentSize="false"
+        lxhRatingBar:dividerWidth="10dp"
+        lxhRatingBar:starCount="5"
+        lxhRatingBar:stateResId="@drawable/comment_ratingbar_selectors"
+        lxhRatingBar:widthAndHeight="30dp">
+    </com.dmeyc.dmestoreyfm.wedgit.XLHRatingBar>
+    <RelativeLayout
+        android:layout_above="@+id/btn_upload"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/ratingBar"
+        android:id="@+id/rl_comm_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shap_whit"
+        >
+        <ScrollView
+            android:id="@+id/sc_etcomment"
+            android:minHeight="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <EditText
+            android:minHeight="@dimen/dimen_80"
+            android:maxHeight="@dimen/dimen_80"
+            android:id="@+id/et_backtext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:gravity="top"
+            android:text=""
+            android:hint="请输入您的群简介"
+            android:maxLength="200"
+            android:textColorHint="@color/gb"
+            android:textSize="14dp" />
+        </ScrollView>
+        <com.dmeyc.dmestoreyfm.adapter.photo.NoScrollGridView
+            android:layout_below="@+id/sc_etcomment"
+            android:id="@+id/gridview_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_radius_grid_bg"
+            android:listSelector="@drawable/selector_pressed_gray"
+            android:numColumns="4"/>
+    </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_botm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:text="确定"
+            android:background="@drawable/shape_tailor_sure"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+        <!--<View-->
+            <!--android:id="@+id/whitback"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="10dp"-->
+            <!--android:background="@color/white"-->
+            <!--/>-->
+<!--</RelativeLayout>-->
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="9.5dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.dmeyc.dmestoreyfm.wedgit.CircleImageView
+        android:id="@+id/civ_header"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_right" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/text_15_black"
+        android:layout_width="0dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="小猴子"
+        app:layout_constraintLeft_toRightOf="@id/civ_header"
+        app:layout_constraintRight_toLeftOf="@id/iv_right"
+        app:layout_constraintTop_toTopOf="@id/iv_right" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/text_14_9D9D9D"
+        android:layout_width="0dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="赞了你的作品"
+        android:textColor="@color/color_9A6500"
+        app:layout_constraintLeft_toLeftOf="@id/tv_name"
+        app:layout_constraintRight_toRightOf="@id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_instruction"
+        style="@style/text_14_9D9D9D"
+        android:layout_width="0dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_name"
+        app:layout_constraintLeft_toRightOf="@+id/tv_time"
+        app:layout_constraintTop_toBottomOf="@id/tv_content"
+        app:layout_constraintRight_toLeftOf="@id/iv_right"
+        android:layout_marginRight="5dp"
+        tools:text="在发布作品时提到了你在发布作品时提到了你    1小时前" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/text_14_9D9D9D"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="9dp"
+        tools:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_instruction"
+        app:layout_constraintTop_toBottomOf="@id/tv_content" />
+
+    <View
+        style="@style/divide_line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</android.support.constraint.ConstraintLayout>

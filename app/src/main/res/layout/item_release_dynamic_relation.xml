@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50">
+
+        <TextView
+            android:id="@+id/tv_club_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="好兔羽毛球"
+            android:textColor="#111111"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_16"
+            />
+        <TextView
+            android:id="@+id/tv_show_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="距离3KM"
+            android:textColor="#969696"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_20"
+            />
+
+        <View
+            style="@style/divide_line"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</LinearLayout>

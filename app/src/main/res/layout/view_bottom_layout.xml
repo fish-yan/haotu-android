@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/transparent"
+    android:id="@+id/cl_bottom"
+    android:layout_height="70dp">
+
+    <View
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/view_home"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv_bottom_home"
+        style="@style/text_15_black"
+        android:layout_marginLeft="23dp"
+        android:textColor="@color/white"
+        android:text="首页"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_bottom_home_line"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/tv_bottom_home"
+        app:layout_constraintRight_toRightOf="@id/tv_bottom_home" />
+
+
+    <View
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/view_release"
+        android:layout_width="100dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/iv_bottom_release"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/icon_home_release_normal"
+        app:layout_constraintBottom_toBottomOf="@+id/view_release"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view_home"
+        app:layout_constraintTop_toTopOf="@+id/view_release" />
+
+
+    <View
+        android:id="@+id/view_mine"
+        android:layout_width="100dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/tv_bottom_mine"
+        style="@style/text_15_black"
+        android:textColor="@color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="23dp"
+        android:text="我"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_bottom_mine_line"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:visibility="gone"
+        android:layout_marginBottom="8dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/tv_bottom_mine"
+        app:layout_constraintRight_toRightOf="@id/tv_bottom_mine" />
+</android.support.constraint.ConstraintLayout>

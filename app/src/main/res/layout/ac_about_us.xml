@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.dmeyc.dmestoreyfm.ui.AboutUsActivity">
+
+    <include layout="@layout/base_title_bar"/>
+    
+    <ImageView
+        android:layout_width="307dp"
+        android:layout_height="204.5dp"
+        android:layout_marginTop="53dp"
+        android:layout_gravity="right"
+        android:src="@drawable/about_img_1"/>
+
+    <TextView
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/color_1a1a1a"
+        android:text="首个在线量身定制平台"/>
+    <TextView
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/color_1a1a1a"
+        android:text="守住每个人心中的匠心"/>
+    <TextView
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/color_1a1a1a"
+        android:text="精准科技记录生活变迁"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom|center_horizontal"
+        android:layout_marginBottom="37dp">
+        <ImageView
+            android:layout_width="113dp"
+            android:layout_height="27dp"
+            android:src="@drawable/home_logo"/>
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:text="V1.0.2"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</LinearLayout>

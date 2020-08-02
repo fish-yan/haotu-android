@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@drawable/shap_timewhite"
+    android:layout_height="match_parent">
+    <!--android:background="@drawable/img_popupmenu_bg"-->
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_marginTop="@dimen/dimen_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="@dimen/dimen_110"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/sockinbg"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/et_sokinteamone"
+                    android:inputType="number"
+                    android:layout_width="@dimen/dimen_110"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="3"
+                    android:textSize="@dimen/dimen_80" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_110"
+                android:layout_height="96dp"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:background="@color/sockinbg"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/et_teamtwosokin"
+                    android:inputType="number"
+                    android:layout_width="@dimen/dimen_110"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="3"
+                    android:textSize="@dimen/dimen_80" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_marginTop="@dimen/dimen_50"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gb"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/tv_dissmiss"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_50"
+                android:layout_marginRight="@dimen/dimen_50"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/black"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gb"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/btn_sub"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/indicator_selected_color"
+                android:text="确定"
+                android:layout_marginRight="@dimen/dimen_50"
+                android:layout_marginLeft="@dimen/dimen_50"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

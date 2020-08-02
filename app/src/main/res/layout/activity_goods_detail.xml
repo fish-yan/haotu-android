@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/text_17_black"
+        android:layout_marginLeft="22.5dp"
+        android:layout_marginTop="12dp"
+        tools:text="30天减脂小蛮腰训练课程" />
+
+    <com.dmeyc.dmestoreyfm.wedgit.GoodsTagView
+        android:id="@+id/goodTagView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22.5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="22.5dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_discountPrice"
+            style="@style/text_wrap_content"
+            android:layout_marginLeft="22.5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/color_FF5F5F"
+            android:textSize="24sp"
+            tools:text="￥99" />
+
+        <TextView
+            tools:text="￥199"
+            android:textSize="11.5sp"
+            android:textColor="@color/color_CECECE"
+            android:id="@+id/tv_price"
+            style="@style/text_wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="33dp"
+            android:layout_toRightOf="@id/tv_discountPrice" />
+
+        <TextView
+            android:id="@+id/tv_pay"
+            style="@style/button_wrap_yellow"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="22.5dp"
+            android:text="立即抢购" />
+    </RelativeLayout>
+
+</LinearLayout>

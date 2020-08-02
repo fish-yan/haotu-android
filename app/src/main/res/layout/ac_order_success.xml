@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.dmeyc.dmestoreyfm.ui.OrderSuccessActivity">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/submit_img"
+                android:scaleType="centerCrop"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="CONGRATULATIONS"
+                    android:textColor="@color/color_404040"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="订单支付成功"
+                    android:layout_marginTop="14dp"
+                    android:textColor="@color/color_404040"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:layout_marginTop="280dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邀请好友加入我们"
+                android:textSize="16sp"
+                android:textColor="@color/color_1a1a1a"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="各得20元现金红包"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/color_1a1a1a"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_order_detail"
+            android:layout_width="176dp"
+            android:layout_height="45dp"
+            android:text="查看订单"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_1radius_1a"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/tv_go_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="继续逛"
+            android:textColor="@color/color_1a1a1a"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"/>
+        <View style="@style/head_shadow"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="31dp"
+    android:layout_height="31dp">
+
+    <com.dmeyc.dmestoreyfm.wedgit.CircleImageView
+        android:id="@+id/headImage"
+        android:layout_width="31dp"
+        android:layout_height="31dp" />
+
+</RelativeLayout>

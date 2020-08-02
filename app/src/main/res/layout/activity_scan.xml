@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <cn.bingoogolapple.qrcode.zxing.ZXingView
+        android:id="@+id/zxingview_panasonic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:qrcv_animTime="1500"
+        app:qrcv_borderColor="@android:color/white"
+        app:qrcv_borderSize="0dp"
+        app:qrcv_cornerColor="#ffffff"
+        app:qrcv_cornerLength="20dp"
+        app:qrcv_cornerSize="3dp"
+        app:qrcv_customScanLineDrawable="@drawable/scan_line_bg"
+        app:qrcv_isTipTextBelowRect="true"
+        app:qrcv_maskColor="#33FFFFFF"
+        app:qrcv_qrCodeTipText="将二维码放入框内，即可自动扫描"
+        app:qrcv_rectWidth="220dp"
+        app:qrcv_scanLineColor="@color/colorPrimaryDark"
+        app:qrcv_scanLineSize="1dp"
+        app:qrcv_tipTextMargin="10dp"
+        app:qrcv_tipTextSize="12sp"
+        app:qrcv_topOffset="120dp" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="52dp"
+        android:src="@drawable/icon_scan_tip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="29dp"
+        android:paddingLeft="14dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:src="@drawable/ic_return_black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/text_16_black"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/iv_back"
+        android:text="扫一扫"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>

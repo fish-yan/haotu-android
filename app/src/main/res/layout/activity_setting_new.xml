@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+        android:id="@+id/civ_privacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:civ_left_str="隐私设置" />
+
+    <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+        android:id="@+id/civ_safe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:civ_left_str="账号与安全" />
+
+    <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+        android:id="@+id/civ_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:civ_left_str="关于好兔" />
+
+    <TextView
+        android:id="@+id/tv_logout"
+        style="@style/button_wrap_yellow"
+        android:layout_marginTop="275dp"
+        android:text="退出登陆" />
+</LinearLayout>

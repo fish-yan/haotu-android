@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/tv_item_left"
+        style="@style/text_17_black"
+        android:layout_width="0dp"
+        android:layout_marginLeft="22.5dp"
+        android:layout_marginTop="22.5dp"
+        android:layout_marginBottom="22.5dp"
+        android:textColorHint="@color/color_9D9D9D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="20元每位" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        style="@style/text_17_black"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/color_FA375C"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_item_left"
+        app:layout_constraintStart_toEndOf="@+id/tv_item_left"
+        app:layout_constraintTop_toTopOf="@+id/tv_item_left"
+        tools:text="" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="13.5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/shape_bg_red_r10"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="限时活动"
+        android:textColor="@color/white"
+        android:textSize="7sp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@id/tv_tip"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone" />
+
+    <com.dmeyc.dmestoreyfm.wedgit.AddMinusView
+        android:id="@+id/addMinusView"
+        android:layout_width="68dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="16.5dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#F7F7F7"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

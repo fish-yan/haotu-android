@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <com.dmeyc.dmestoreyfm.wedgit.PinchImageView
+        android:id="@+id/scroll_gallery_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.dmeyc.dmestoreyfm.wedgit.CircleImageView
+            android:id="@+id/civ_header"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/text_14_9D9D9D"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toRightOf="@id/civ_header"
+            app:layout_constraintTop_toTopOf="@id/civ_header" />
+
+        <TextView
+            android:id="@+id/tv_take"
+            style="@style/text_wrap_content"
+            android:textColor="@color/color_CECECE"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@id/civ_header"
+            app:layout_constraintLeft_toLeftOf="@id/tv_name" />
+
+        <TextView
+            android:id="@+id/tv_look_pre"
+            style="@style/text_wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginRight="51dp"
+            android:background="@drawable/shape_look_image_bg"
+            android:paddingLeft="18dp"
+            android:paddingTop="6dp"
+            android:paddingRight="18dp"
+            android:paddingBottom="6dp"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            app:layout_constraintBottom_toBottomOf="@id/civ_header"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/civ_header"
+            tools:text="查看原图" />
+
+        <ImageView
+            android:id="@+id/iv_like"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="13dp"
+            android:src="@drawable/icon_like_normal"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/civ_header" />
+
+        <TextView
+            style="@style/text_wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="赞"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            app:layout_constraintLeft_toLeftOf="@id/iv_like"
+            app:layout_constraintRight_toRightOf="@id/iv_like"
+            app:layout_constraintTop_toBottomOf="@id/iv_like" />
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

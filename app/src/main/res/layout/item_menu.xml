@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="18dp"
+        android:background="@color/red"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/iv_menu_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="19dp"
+        android:layout_height="19dp" />
+    <TextView
+        android:id="@+id/tv_menu_title"
+        android:layout_marginLeft="15.5dp"
+        app:layout_constraintTop_toTopOf="@+id/iv_menu_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_menu_icon"
+        app:layout_constraintLeft_toRightOf="@+id/iv_menu_icon"
+        tools:text="发布的活动"
+        style="@style/text_16_black" />
+</android.support.constraint.ConstraintLayout>

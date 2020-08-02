@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.dmeyc.dmestoreyfm.ui.FeedBackActivity">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <TextView style="@style/tv_common_title"
+        android:text="意见反馈"/>
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/shape_10radius_f7"
+        android:padding="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/color_1a1a1a"
+        android:textSize="14sp"
+        android:textColorHint="@color/color_c5c5c5"
+        android:hint="我们想了解您喜欢哪些方面，以及您认为我们可以在哪些方面做的更好.我们将无法逐条回复反馈。"
+        android:gravity="left|top"/>
+    <TextView
+        android:id="@+id/tv_submit"
+        style="@style/common_submit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:text="确认提交"/>
+</LinearLayout>

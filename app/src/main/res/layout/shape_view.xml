@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp">
+        <LinearLayout
+            android:id="@+id/ll_1"
+            style="@style/shape_ll"
+            android:layout_marginTop="0dp">
+            <TextView
+                android:text="胸围"
+                style="@style/shape_tv" />
+            <TextView
+                android:id="@+id/tv_1"
+                style="@style/shape_tv"
+                tools:text="50.2"
+                android:textSize="18sp"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/shape_ll"
+            android:id="@+id/ll_2">
+            <TextView
+                android:text="腰围"
+                style="@style/shape_tv" />
+            <TextView
+                android:id="@+id/tv_2"
+                style="@style/shape_tv"
+                tools:text="50.2"
+                android:textSize="18sp"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/shape_ll"
+            android:id="@+id/ll_3">
+            <TextView
+                android:text="臀围"
+                style="@style/shape_tv" />
+            <TextView
+                android:id="@+id/tv_3"
+                style="@style/shape_tv"
+                tools:text="50.2"
+                android:textSize="18sp"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/shape_ll"
+            android:id="@+id/ll_4">
+            <TextView
+                android:text="腕围"
+                style="@style/shape_tv" />
+            <TextView
+                android:id="@+id/tv_4"
+                style="@style/shape_tv"
+                tools:text="50.2"
+                android:textSize="18sp"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp">
+        <LinearLayout style="@style/shape_ll"
+            android:layout_marginTop="0dp"
+            android:id="@+id/ll_5">
+            <TextView
+                android:text="肩宽"
+                style="@style/shape_tv" />
+            <TextView
+                android:id="@+id/tv_5"
+                style="@style/shape_tv"
+                tools:text="50.2"
+                android:textSize="18sp"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/shape_ll"
+            android:id="@+id/ll_6">
+            <TextView
+                android:text="臂长"
+                style="@style/shape_tv" />
+            <TextView
+                android:id="@+id/tv_6"
+                style="@style/shape_tv"
+                tools:text="50.2"
+                android:textSize="18sp"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/shape_ll"
+            android:id="@+id/ll_7">
+            <TextView
+                android:text="下档长"
+                style="@style/shape_tv"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_7"
+                style="@style/shape_tv"
+                tools:text="50.2"
+                android:textSize="18sp"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/shape_ll"
+            android:id="@+id/ll_8">
+            <TextView
+                android:text="脚踝围"
+                style="@style/shape_tv" />
+            <TextView
+                android:id="@+id/tv_8"
+                style="@style/shape_tv"
+                tools:text="50.2"
+                android:textSize="18sp"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

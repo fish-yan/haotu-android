@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bananer"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/head_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/color_1a1a1a"
+            android:text="alive stories"/>
+        <TextView
+            android:id="@+id/head_follow"
+            android:layout_width="82dp"
+            android:layout_height="27dp"
+            android:textSize="12sp"
+            android:textColor="@color/indicator_selected_color"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            tools:text="关注品牌"
+            android:background="@drawable/shape_14radius_fd7e18"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/head_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:textSize="13sp"
+        android:textColor="@color/gray"
+        android:layout_marginBottom="35dp"
+        tools:text="来自韩国的大姐姐叫你做设计，这是一个很好的设计哦，多种风格，快来找我撒，机不可失失不再来。这些都是我随手瞎打的！"/>
+
+    <View style="@style/divide_block"/>
+
+    <com.dmeyc.dmestoreyfm.wedgit.ScreenView
+        android:id="@+id/screen_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"/>
+</LinearLayout>

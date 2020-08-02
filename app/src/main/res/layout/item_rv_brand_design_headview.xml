@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_head_brand_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_1a1a1a"
+            android:textSize="16sp"
+            tools:text="最新设计师入住"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="17dp"
+            android:layout_marginTop="30dp"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_head_brand_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_1a1a1a"
+            android:textSize="16sp"
+            tools:text="最受欢迎设计奖排行榜"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="17dp"
+            android:layout_marginTop="17dp"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="19dp">
+            <TextView
+                android:id="@+id/tv_head_brand_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_1a1a1a"
+                android:textSize="16sp"
+                tools:text="全部设计师" />
+            <TextView
+                android:id="@+id/tv_head_brand_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="ALLBRANDS"
+                android:textSize="11sp"
+                android:textColor="@color/color_1a1a1a"
+                android:layout_marginLeft="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

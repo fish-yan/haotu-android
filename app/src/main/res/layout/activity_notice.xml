@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_title"/>
+
+    <EditText
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:gravity="top"
+        android:paddingTop="@dimen/dimen_22.5"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_15"
+        android:layout_height="match_parent"
+        android:id="@+id/et_notice"
+        android:hint="请输入俱乐部群公告"
+        android:layout_width="match_parent"/>
+</LinearLayout>

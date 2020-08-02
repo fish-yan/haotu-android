@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <include layout="@layout/include_top_title_layout"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0.5"
+        android:background="#ebebeb"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑"
+            android:layout_marginLeft="16dp"
+            android:textColor="#111111"
+            android:textSize="14sp"
+            />
+
+        <EditText
+            android:id="@+id/edit_topic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入话题名称"
+            android:textColor="#111111"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:textColorHint="#999999"
+            android:maxLength="20"
+            />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_show_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0/20"
+        android:gravity="right"
+        android:paddingRight="16dp"
+        android:textColor="#555555"
+        />
+
+    <TextView
+        android:id="@+id/tv_to_sure"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_blue_circle"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="80dp"
+        />
+</LinearLayout>

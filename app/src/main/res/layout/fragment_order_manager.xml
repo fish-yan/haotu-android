@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:id="@+id/iv_empty"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/shouhuo_img" />
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="暂无订单"
+            android:textColor="@color/gray" />
+    </LinearLayout>
+
+    <include layout="@layout/base_refresh"/>
+</RelativeLayout>

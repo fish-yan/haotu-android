@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_title"/>
+    <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:id="@+id/civ_recommand"
+        app:civ_left_str="允许将我推荐给好友"
+        app:civ_type="3"
+        android:layout_height="wrap_content"/>
+    <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+        android:layout_width="match_parent"
+        android:id="@+id/civ_contact"
+        app:civ_type="3"
+        app:civ_left_str="允许访问我的通讯录"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

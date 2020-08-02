@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login">
+
+    <android.support.constraint.Guideline
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/gl1"
+        app:layout_constraintGuide_percent="0.322"
+        android:layout_height="1dp" />
+    <android.support.constraint.Guideline
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/gl2"
+        app:layout_constraintGuide_percent="0.772"
+        android:layout_height="1dp" />
+    <TextView
+        android:id="@+id/tv_skip"
+        style="@style/text_16_black"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="7dp"
+        android:padding="10dp"
+        android:text="跳过"
+        android:textColor="@color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.dmeyc.dmestoreyfm.wedgit.TimerTaskTextView
+        android:id="@+id/ttv_item_code"
+        android:layout_width="88dp"
+        android:layout_height="29dp"
+        android:layout_marginRight="37dp"
+        android:gravity="center"
+        android:text="获取验证码"
+        android:textColor="@color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/gl1" />
+
+
+    <TextView
+        style="@style/text_wrap_content"
+        android:layout_marginLeft="17dp"
+        android:text="+ 86"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/et_phone_no"
+        app:layout_constraintTop_toTopOf="@+id/et_phone_no" />
+
+    <EditText
+        android:id="@+id/et_phone_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp"
+        android:background="@null"
+        android:hint="请输入手机号"
+        android:paddingLeft="70dp"
+        android:inputType="phone"
+        android:textColor="@color/white"
+        android:textColorHint="@color/color_F7F7F7"
+        app:layout_constraintBottom_toBottomOf="@id/ttv_item_code"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/ttv_item_code"
+        app:layout_constraintTop_toTopOf="@id/ttv_item_code" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/et_phone_no"
+        app:layout_constraintRight_toRightOf="@id/ttv_item_code"
+        app:layout_constraintTop_toBottomOf="@id/et_phone_no" />
+
+    <EditText
+        android:id="@+id/et_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="42dp"
+        android:background="@null"
+        android:gravity="center"
+        android:hint="输入验证码"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/ttv_item_code"
+        app:layout_constraintTop_toBottomOf="@id/view1" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/et_phone_no"
+        app:layout_constraintRight_toRightOf="@id/ttv_item_code"
+        app:layout_constraintTop_toBottomOf="@id/et_code" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        style="@style/button_wrap_yellow"
+        android:layout_marginTop="42dp"
+        android:paddingLeft="32dp"
+        android:paddingTop="4.5dp"
+        android:paddingRight="32dp"
+        android:paddingBottom="4.5dp"
+        android:text="登入"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view2" />
+
+    <ImageView
+        android:id="@+id/iv_wechat"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/icon_wechat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gl2" />
+
+    <TextView
+        style="@style/text_14_9D9D9D"
+        android:layout_marginTop="10dp"
+        android:text="微信快捷登陆"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_wechat" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        style="@style/text_14_9D9D9D"
+        android:layout_marginBottom="33dp"
+        android:text="登陆即表示同意"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_protocol" />
+
+
+    <TextView
+        android:id="@+id/tv_protocol"
+        style="@style/text_14_9D9D9D"
+        android:text="用户协议"
+        android:textColor="@color/color_9A6500"
+        app:layout_constraintLeft_toRightOf="@id/tv_tip"
+        app:layout_constraintRight_toLeftOf="@+id/tv_and"
+        app:layout_constraintTop_toTopOf="@id/tv_tip" />
+
+    <TextView
+        android:id="@+id/tv_and"
+        style="@style/text_14_9D9D9D"
+        android:text="及"
+        android:textColor="@color/color_9A6500"
+        app:layout_constraintLeft_toRightOf="@id/tv_protocol"
+        app:layout_constraintRight_toLeftOf="@+id/tv_private"
+        app:layout_constraintTop_toTopOf="@id/tv_tip" />
+
+    <TextView
+        android:id="@+id/tv_private"
+        style="@style/text_14_9D9D9D"
+        android:text="隐私条款"
+        android:textColor="@color/color_9A6500"
+        app:layout_constraintLeft_toRightOf="@id/tv_and"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_tip" />
+
+
+</android.support.constraint.ConstraintLayout>

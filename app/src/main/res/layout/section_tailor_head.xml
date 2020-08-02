@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+<ImageView
+    android:id="@+id/img_top"
+    android:layout_marginTop="@dimen/dimen_40"
+    android:layout_width="312dp"
+    android:layout_height="93dp"
+    android:src="@drawable/tailor_img"
+    android:layout_gravity="center_horizontal"
+    android:adjustViewBounds="true"
+    android:scaleType="fitXY"/>
+    <TextView
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_1a1a1a"
+        android:text="温馨提示:"
+        android:textSize="16sp"
+        android:layout_marginTop="11dp"/>
+    <TextView
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_1a1a1a"
+        android:text="测量尺码可以准确帮您推荐合适您的尺寸"
+        android:layout_marginTop="10dp"
+        />
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_10"
+        android:background="@color/divide_block_color"/>
+
+</LinearLayout>

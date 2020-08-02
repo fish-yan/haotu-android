@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:id="@+id/iv_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="370dp"
+                android:layout_marginTop="59dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身高/体重"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/gray"/>
+            <TextView
+                android:id="@+id/height_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="170CM/65KG"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/color_1a1a1a"
+                android:layout_marginBottom="25dp"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <com.dmeyc.dmestoreyfm.wedgit.ShapeView
+        android:id="@+id/shapeview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

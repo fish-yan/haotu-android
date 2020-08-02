@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+                android:id="@+id/civ_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:civ_type="10" />
+
+            <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+                android:id="@+id/civ_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:civ_type="10" />
+
+            <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+                android:id="@+id/civ_addr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:civ_type="11" />
+
+            <com.dmeyc.dmestoreyfm.wedgit.CustomItemView
+                android:id="@+id/civ_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:civ_type="10" />
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="match_parent"
+                android:layout_height="320dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

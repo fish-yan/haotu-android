@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/divide_line"
+    android:layout_height="match_parent">
+<ListView
+    android:divider="@null"
+     android:layout_width="100dp"
+     android:layout_height="match_parent"
+     android:id="@+id/lv_catory"
+    />
+    <include
+        layout="@layout/base_refresh"
+/>
+    <RelativeLayout
+        android:id="@+id/rel_head"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:visibility="gone"
+        android:clickable="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:background="@color/white">
+            <com.dmeyc.dmestoreyfm.wedgit.flowview.AutoFlowLayout
+                android:id="@+id/selected_flowlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" />
+            <ImageView
+                android:id="@+id/screening"
+                android:layout_width="42dp"
+                android:layout_height="25dp"
+                android:paddingRight="17dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/shoping_ic_screen_black"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_divide_up"/>
+    </RelativeLayout>
+</LinearLayout>

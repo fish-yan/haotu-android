@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/item_iv_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bananer"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="0dp"/>
+    <TextView
+        android:id="@+id/item_tv_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/color_1a1a1a"
+        android:lineSpacingExtra="7dp"
+        android:layout_marginBottom="20dp"
+        tools:text="ICICLE之和创立是一个面向未来的品牌,是一个面向未来的品牌,是一个面向未来的品牌。"/>
+</LinearLayout>

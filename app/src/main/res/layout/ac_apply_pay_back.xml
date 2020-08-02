@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.dmeyc.dmestoreyfm.ui.ApplyPayBackActivity">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="80dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/shape_10radius_f7"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="温馨提示:"
+                        android:textColor="@color/color_1a1a1a"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="1.定制类商品不支持7天无理由退换货"
+                        android:textColor="@color/color_1a1a1a"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="2.非定制类商品在不影响二次销售的情况下可以退换货"
+                        android:textColor="@color/color_1a1a1a"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="3.使用商品优惠券需扣除优惠券价位"
+                        android:textColor="@color/color_1a1a1a"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="4.订单一旦取消无法恢复"
+                        android:textColor="@color/color_1a1a1a"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View style="@style/divide_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="退货原因"
+                        android:textColor="@color/color_1a1a1a"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_reason_back"
+                        style="@style/mine_common_tv"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:drawablePadding="10dp"
+                        android:gravity="right|center_vertical"
+                        android:hint="请输入"
+                        android:textColorHint="@color/gray"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <View style="@style/divide_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/mine_common_tv"
+                        android:layout_width="100dp"
+                        android:drawableRight="@null"
+                        android:text="退货金额"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yuan"
+                        android:textColor="@color/indicator_selected_color"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_backmoney"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="0"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true"
+                        android:textColor="@color/indicator_selected_color"
+                        android:textColorHint="@color/indicator_selected_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_max_backmoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:textColor="@color/gray" />
+                </LinearLayout>
+
+                <View style="@style/divide_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        style="@style/mine_common_tv"
+                        android:text="退款联系人"
+                        android:textSize="12sp" />
+
+                    <com.dmeyc.dmestoreyfm.wedgit.MoveEditText
+                        android:id="@+id/met_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="34dp"
+                        android:hint="请输入"
+                        android:imeOptions="actionDone"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <View style="@style/divide_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        style="@style/mine_common_tv"
+                        android:text="联系人电话"
+                        android:textSize="12sp" />
+
+                    <com.dmeyc.dmestoreyfm.wedgit.MoveEditText
+                        android:id="@+id/met_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="34dp"
+                        android:hint="请输入"
+                        android:imeOptions="actionDone"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <View style="@style/divide_line" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <View style="@style/head_shadow" />
+
+        <TextView
+            android:id="@+id/tv_submit"
+            style="@style/common_submit"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="申请退货" />
+    </RelativeLayout>
+</LinearLayout>

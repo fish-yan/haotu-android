@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="600px">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_setting_1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/item_roundiv"
+            android:layout_width="match_parent"
+            android:layout_height="427px"
+            app:riv_corner_radius="20px"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_vp_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/color_1a1a1a"
+        android:singleLine="true"
+        tools:text="十月精选上新品牌,满足时髦百变的你"/>
+    <TextView
+        android:id="@+id/tv_vp_item_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="9dp"
+        android:textSize="12sp"
+        android:textColor="#adadad"
+        android:maxLines="2"
+        tools:text="深秋十月，北方气温已跌至冰点，担心不能像夏天一样美美穿衣？点米秀场帮你解决！"/>
+</LinearLayout>
